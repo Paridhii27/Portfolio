@@ -1,4 +1,58 @@
-.container {
+body {
+    margin-top: 40px;
+    margin-right: 30px;
+    margin-bottom: 40px;
+    margin-left: 30px;
+
+    background-color: black;
+    color: white;
+  }
+  
+  .header {
+    padding: 20px;
+}
+
+.logo {
+    float: left;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.nav {
+    float: right;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.nav li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.nav a {
+    display:block;
+    color: #333;
+    text-decoration: none;
+    text-align:center;
+    padding: 10px 5px;
+    border-radius: 5px;
+    background-color: #ccc;
+}
+
+.nav a:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+  .container {
     position: relative;
   }
   
@@ -20,4 +74,23 @@
     overflow-y: auto;
     /* Set other styles for the scrollable section as needed */
   }
-  
+
+
+  @font-face {
+    font-family: 'Pangram Pangram';
+    src: url('/assets/PPRightSans-Medium.otf') format('opentype');
+    font-weight: 100;
+ }
+
+ h1 {
+    font-family: 'Pangram Pangram', serif;
+}
+
+p {
+    font-family: 'Pangram Pangram', serif;
+}
+
+a{
+    font-family: 'Pangram Pangram', serif;
+    color: white;
+} 
