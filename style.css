@@ -96,6 +96,7 @@ body {
   justify-content: center;
   grid-template-columns: 1fr;
   margin: 40px;
+  gap:100px;
   /*grid-auto-rows: minmax(200px, auto);*/
   overflow: auto;
   padding: 50px;
@@ -109,5 +110,30 @@ body {
 }
 
 .image-grid-container img:hover {
+  opacity: 1;
+}
+
+
+.image-flex-container {
+  display: flex;
+  justify-content: center;
+  grid-template-columns: 1fr;
+  margin: 40px;
+  gap:100px;
+  /*grid-auto-rows: minmax(200px, auto);*/
+  overflow: auto;
+  padding: 50px;
+}
+
+.image-flex-container img {
+  opacity: 0.7;
+  width: 400px;
+  height: 400px;
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.image-flex-container img:hover {
   opacity: 1;
 }
