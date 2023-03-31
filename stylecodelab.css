@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'Pangram Pangram';
+    src: url('/assets/PPRightSans-Medium.otf') format('opentype');
+    font-weight: 100;
+  }
+  *{
+    border: 0.5px solid blue;
+  }
+  body {
+    /* margin-top: 40px;
+     margin-right: 30px;
+     margin-bottom: 40px;
+     margin-left: 30px;*/
+     max-width: 1200px;
+     margin: 0 auto;
+     background-color: black;
+     color: white;
+     display: block;
+     box-sizing: border-box; /* The box border applies to the inside of the div and not to the outside */
+     font-family: 'Pangram Pangram', serif;
+  }
+  
+  p {
+    color: white;
+    font-size: 36px;
+  }
+  
+  a{
+    color: white;
+    font-size: 28px;
+    text-decoration: none;
+  } 
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    /* margin: 20px; */
+  }
+  
+  nav section {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    width: fit-content;
+    display: flex;
+  }
+  
+  nav section a{
+    margin-left: 20px;
+    padding: 10px;
+  }
+  
+  nav a:hover {
+    opacity: 0.7;
+  }
+    
+  .header {
+      padding: 20px;
+  }
+  
+  .logo {
+      font-size: 28px;
+      margin: 2%;
+  }
+  
+  .content {
+    margin-top: 150px; 
+    margin-left: 75px;
+  
+  }
+  
+  .image-flex-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .image-flex-container img {
+    opacity: 0.7;
+    object-fit: contain;
+  }
+  
+  .image-flex-container img:hover {
+    opacity: 1;
+  }
+  
+  .two{
+    width: 48%;
+  }
+  
+  .one{
+    width: 100%;
+  }
+  .linearGrid {
+    margin: 50px 100px;
+  }
+  .linearGrid img{
+    width:100%;
+    opacity: 0.7;
+  }
+  
+  .linearGrid img:hover{
+    opacity: 1;
+    cursor:url('./Images/cursor.png');
+  }
+  
+  .homepage {
+    margin: 50px;
+  }
+  .homepage img{
+    width:100%;
+    opacity: 1;
+    margin-bottom: 50px;
+  }
