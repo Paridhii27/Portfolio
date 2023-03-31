@@ -72,7 +72,7 @@
   .image-flex-container {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 20px;
   }
   
   .image-flex-container img {
@@ -90,6 +90,7 @@
   
   .one{
     width: 100%;
+    height:50%;
   }
   .linearGrid {
     margin: 50px 100px;
