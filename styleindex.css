@@ -6,6 +6,11 @@
 /**{
   border: 0.5px solid blue;
 }*/
+
+.module {
+  cursor: url('./Images/cursor.png'), auto;	
+}
+
 body {
 
    max-width: 1200px;

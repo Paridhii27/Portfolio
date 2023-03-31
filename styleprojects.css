@@ -3,9 +3,9 @@
     src: url('/assets/PPRightSans-Medium.otf') format('opentype');
     font-weight: 100;
   }
-  *{
+  /**{
     border: 0.5px solid blue;
-  }
+  }*/
   body {
 
      max-width: 1200px;
@@ -18,9 +18,15 @@
      font-family: 'Pangram Pangram', serif;
   }
   
+  h1{
+    margin:25px;
+    color: #c8bfdb;
+  }
+
   p {
     color: white;
     font-size: 26px;
+    margin-left: 2%;
   }
   
   a{
@@ -61,8 +67,7 @@
       margin: 2%;
   }
   
-  .content {
-    margin-top: 150px; 
+  .content { 
     margin-left: 75px;
   
   }
@@ -70,7 +75,6 @@
   .image-flex-container {
     display: flex;
     justify-content: space-between;
-    margin: 40px;
     padding: 10px;
   }
   
@@ -91,12 +95,11 @@
     width: 100%;
   }
   .linearGrid {
-    margin: 50px 100px;
+    margin: 50px 20px;
   }
   .linearGrid img{
     width:100%;
     opacity: 0.7;
-    margin-bottom: 50px;
   }
   
   .linearGrid img:hover{
