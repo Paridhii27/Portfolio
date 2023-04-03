@@ -26,6 +26,7 @@ body {
    box-sizing: border-box; /* The box border applies to the inside of the div and not to the outside */
    font-family: 'Pangram Pangram', serif;
    overflow: hidden;
+   cursor: url('./Images/cursor.png'), auto;
 }
 
 p {
@@ -41,7 +42,8 @@ a{
 
 img{
   width:25%;
-  height:55%;
+  height:auto;
+  object-fit: contain;
 }
 
 main{
