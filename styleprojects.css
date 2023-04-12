@@ -81,10 +81,12 @@
   .image-flex-container img {
     opacity: 0.7;
     object-fit: contain;
+    border-radius: 75px
   }
   
   .image-flex-container img:hover {
     opacity: 1;
+    border-radius: 75px
   }
   
   .two{
@@ -113,4 +115,8 @@
     width:100%;
     opacity: 1;
     margin-bottom: 50px;
+  }
+
+  img{
+    border-radius: 25px;
   }
