@@ -23,9 +23,14 @@
     color: #c8bfdb;
   }
 
+  h2{
+    margin:26px;
+    margin-left: 2%;
+  }
+
   p {
     color: white;
-    font-size: 26px;
+    font-size: 20px;
     margin-left: 2%;
   }
   
@@ -75,7 +80,7 @@
   .image-flex-container {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 20px;
   }
   
   .image-flex-container img {
