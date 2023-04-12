@@ -7,21 +7,26 @@
     border: 0.5px solid blue;
   }*/
   body {
-  
+
      max-width: 1200px;
      margin: 0 auto;
      background-color: black;
-     /* height: 100%; */
+     height: 100%;
      color: white;
      display: block;
      box-sizing: border-box; /* The box border applies to the inside of the div and not to the outside */
      font-family: 'Pangram Pangram', serif;
-     /* overflow: hidden; */
   }
   
+  h1{
+    margin:25px;
+    color: #c8bfdb;
+  }
+
   p {
     color: white;
-    font-size: 23px;
+    font-size: 26px;
+    margin-left: 2%;
   }
   
   a{
@@ -29,51 +34,6 @@
     font-size: 28px;
     text-decoration: none;
   } 
-  
-  img{
-    height:auto;
-    width:100%;
-    object-fit: contain;
-  }
-  main{
-    height: fit-content;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(9 / 11vw);
-    grid-template-rows: repeat ( 9 / 11vh);
-    grid-gap: 0;
-    padding: 0;
-    margin: 0;
-  }
-  /*balloon*/
-  div:nth-of-type(1){
-    background-color: blue;
-    padding: 30px;
-    grid-column: 1  ;
-    grid-row:  1 ;
-  }
-  
-  div:nth-of-type(2){
-    background-color: purple;
-    padding: 30px;
-    grid-column: 1/ 3;
-    grid-row: 6 / 6;
-  }
-  
-  div:nth-of-type(3){
-    background-color: yellow;
-    padding: 30px;
-    grid-column: 1 / 9;
-    grid-row: 8 / 9;
-  }
-
-  
-  div:nth-of-type(4){
-    background-color: green;
-    grid-column: 6/ 6;
-    grid-row: 4 / 9;
-    padding: 30px;
-  }
   
   nav {
     display: flex;
@@ -107,8 +67,7 @@
       margin: 2%;
   }
   
-  .content {
-    margin-top: 150px; 
+  .content { 
     margin-left: 75px;
   
   }
@@ -116,17 +75,14 @@
   .image-flex-container {
     display: flex;
     justify-content: space-between;
-    margin: 40px;
     padding: 10px;
   }
   
   .image-flex-container img {
-    opacity: 0.7;
     object-fit: contain;
   }
   
   .image-flex-container img:hover {
-    opacity: 1;
   }
   
   .two{
@@ -137,12 +93,11 @@
     width: 100%;
   }
   .linearGrid {
-    margin: 50px 100px;
+    margin: 50px 20px;
   }
   .linearGrid img{
     width:100%;
     opacity: 0.7;
-    margin-bottom: 50px;
   }
   
   .linearGrid img:hover{
