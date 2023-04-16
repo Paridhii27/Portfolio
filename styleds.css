@@ -19,14 +19,18 @@
   }
   
   h1{
-    margin:25px;
+    margin-left: 4%;
     color: #c8bfdb;
+  }
+  
+  h2{
+    margin-left: 4%;
   }
 
   p {
     color: white;
     font-size: 26px;
-    margin-left: 2%;
+    margin-left: 4%;
   }
   
   a{

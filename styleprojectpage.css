@@ -21,12 +21,18 @@
   h1{
     margin:25px;
     color: #c8bfdb;
+    margin-left: 4%;
+  }
+
+  h2{
+    color: white;
+    margin-left: 4%;
   }
 
   p {
     color: white;
     font-size: 20px;
-    margin-left: 2%;
+    margin-left: 4%;
   }
   
   a{
