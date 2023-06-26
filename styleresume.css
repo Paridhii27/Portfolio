@@ -3,34 +3,35 @@
     src: url('/assets/PPRightSans-Medium.otf') format('opentype');
     font-weight: 100;
   }
-  /**{
+  *{
     border: 0.5px solid blue;
-  }*/
+  }
   body {
-    /* margin-top: 40px;
-     margin-right: 30px;
-     margin-bottom: 40px;
-     margin-left: 30px;*/
+
      max-width: 1200px;
      margin: 0 auto;
      background-color: black;
+     height: 100%;
      color: white;
      display: block;
      box-sizing: border-box; /* The box border applies to the inside of the div and not to the outside */
      font-family: 'Pangram Pangram', serif;
   }
-
-  #special{
-    bottom: 150px !important;
-    left: 45%;
-  }
   
   h1{
-    margin-top:5%;
+    margin:25px;
+    color: #c8bfdb;
   }
+
+  h2{
+    margin:26px;
+    margin-left: 2%;
+  }
+
   p {
     color: white;
-    font-size: 22px;
+    font-size: 20px;
+    margin-left: 2%;
   }
   
   a{
@@ -39,9 +40,6 @@
     text-decoration: none;
   } 
   
-  img{
-    opacity:0.5;
-  }
   nav {
     display: flex;
     justify-content: space-between;
@@ -74,23 +72,21 @@
       margin: 2%;
   }
   
-  .content {
-    margin-left: 25px;
+  .content { 
+    margin-left: 75px;
   
   }
   
   .image-flex-container {
     display: flex;
     justify-content: space-between;
+    padding: 20px;
   }
   
   .image-flex-container img {
     opacity: 1;
     object-fit: contain;
-  }
-  
-  .image-flex-container img:hover {
-    opacity: 1;
+    border-radius: 75px
   }
   
   .two{
@@ -101,20 +97,19 @@
     width: 100%;
   }
   .linearGrid {
-    margin: 50px 100px;
+    margin: 50px 20px;
   }
   .linearGrid img{
     width:100%;
-    opacity: 1;
+    opacity: 0.7;
   }
   
   .linearGrid img:hover{
     opacity: 1;
-    cursor:url('./Images/cursor.png');
   }
   
   .homepage {
-    margin: 50px;
+    margin: 50px 50px;
   }
   .homepage img{
     width:100%;
