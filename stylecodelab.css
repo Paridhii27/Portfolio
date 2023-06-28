@@ -40,7 +40,7 @@
   nav section {
     list-style-type: none;
     margin: 0;
-    padding: 10px;
+    padding: 20px;
     width: fit-content;
     display: flex;
   }
@@ -60,7 +60,7 @@
   
   .logo {
       font-size: 28px;
-      margin: 2%;
+      margin: 3%;
   }
   
   .content {
@@ -104,15 +104,7 @@
     opacity: 1;
     cursor:url('./Images/cursor.png');
   }
-  
-  .homepage {
-    margin: 50px;
-  }
-  .homepage img{
-    width:100%;
-    opacity: 1;
-    margin-bottom: 50px;
-  }
+
 
   img{
     border-radius: 15px

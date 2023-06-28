@@ -16,16 +16,12 @@ body {
    max-width: 1200px;
    margin: 0 auto;
    background-color: black;
-   /* background-image: url('./Images/homepage.gif'); */
-   /* background-repeat: no-repeat; */
-   /* background-position: center; */
-   /* background-size: 100%; */
    height: 100%;
    color: white;
    display: block;
    box-sizing: border-box; /* The box border applies to the inside of the div and not to the outside */
    font-family: 'Pangram Pangram', serif;
-   cursor: url('./Images/cursor.png'), auto;
+   /* cursor: url('./Images/cursor.png'), auto; */
 }
 
 
@@ -51,17 +47,14 @@ p {
   font-size: 23px;
   margin-left: 10%;
   margin-bottom: 50px;
-  justify-content: space-between;
 }
 
 img{
   width:72%;
-  justify-content: space-between;
   opacity: 0.9;
   margin-left: 20%;
   margin-bottom: 50px;
   border-radius: 25px;
-  /* margin: 50px 100px ; */
 }
 
 img:hover{
@@ -69,35 +62,13 @@ img:hover{
 }
 
 #home {
-  width: 100vw;
-  height : 100vh;
+  width: 120%;
   object-fit: cover;
   top:0%;
-  margin-left:0%;
+  margin-left:-10%;
   z-index: -1;
   border-radius: 0;
-}
-
-
-/* .content { 
-margin-left: 75px;
-} */
-
-.image-flex-container {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-}
-
-.image-flex-container img {
-  opacity: 0.7;
-  object-fit: contain;
-  border-radius: 75px
-}
-
-.image-flex-container img:hover {
-  opacity: 1;
-  border-radius: 75px
+  overflow-x: hidden; */
 }
 
 /* main{
@@ -112,29 +83,20 @@ margin-left: 75px;
   display: flex;
 } */
 
-.logo {
-  display: flex;
-  font-size: 28px;
-  top: 0;
-  overflow: hidden;
-  position: absolute;
-}
-
 .topnav {
   display: flex;
-  justify-content: space-between;
-  width: 100%;
+  /* justify-content: space-between; */
+  width: 62%;
   top: 0;
-  left: 60%;
-  overflow: hidden;
+  left: 62%;
   position: absolute;
   /* margin: 20px; */
 }
 
-.topnav section {
+.topnav nav section {
   list-style-type: none;
   margin: 0;
-  padding: 2%;
+  padding: 20px;
   width: fit-content;
   display: flex;
 }
@@ -148,13 +110,14 @@ margin-left: 75px;
   opacity: 0.7;
 }
 
-nav {
+.logo {
   display: flex;
-  justify-content: space-between;
-  /* margin: 20px; */
+  font-size: 28px;
+  top: 0;
+  margin: 3%;
+  position: absolute;
 }
-
-  
+ 
 /* .header {
     padding: 20px;
 }
