@@ -19,7 +19,7 @@
      box-sizing: border-box; /* The box border applies to the inside of the div and not to the outside */
      font-family: 'Pangram Pangram', serif;
   }
-
+  
   #special{
     bottom: 150px !important;
     left: 45%;

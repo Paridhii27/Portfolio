@@ -20,13 +20,17 @@
   
   h1{
     margin:25px;
-    color: #c8bfdb;
+    color: black;
+    font-size: 50px;
     margin-left: 4%;
+    text-shadow: -1px 1px 0 #ffffff,
+				  2px 1px 0 #ffffff,
+				 1px -1px 0 #ffffff;
   }
 
   h2{
     color: white;
-    margin-left: 4%;
+    margin-left: 4%; 
   }
 
   p {
@@ -86,13 +90,10 @@
   }
   
   .image-flex-container img {
-    opacity: 0.7;
+    opacity: 0.9;
     object-fit: contain;
   }
   
-  .image-flex-container img:hover {
-    opacity: 1;
-  }
   
   .two{
     width: 48%;
