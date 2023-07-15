@@ -1,6 +1,12 @@
 @font-face {
-    font-family: 'Pangram Pangram';
+    font-family: 'Pangram heading';
     src: url('/assets/PPRightSans-Medium.otf') format('opentype');
+    font-weight: 100;
+  }
+
+@font-face {
+    font-family: 'Pangram content';
+    src: url('/assets/PPEditorialOld-Ultralight.otf') format('opentype');
     font-weight: 100;
   }
   /**{
@@ -15,10 +21,17 @@
      color: white;
      display: block;
      box-sizing: border-box; /* The box border applies to the inside of the div and not to the outside */
-     font-family: 'Pangram Pangram', serif;
   }
   
+  hr {
+    background-color: yellow; /* Set a yellow background color for the horizontal rule */
+    background-image: linear-gradient(to right, red, blue); /* Apply a linear gradient as the background image */
+    background-size: 100% 1px; /* Set the size of the background image */
+    background-repeat: no-repeat; /* Prevent repeating the background image */
+  }
+
   h1{
+    font-family: 'Pangram heading', serif;
     margin:25px;
     color: black;
     font-size: 50px;
@@ -29,18 +42,22 @@
   }
 
   h2{
+    font-family: 'Pangram heading', serif;
     color: white;
     margin-left: 4%; 
   }
 
   p {
     color: white;
-    font-size: 20px;
+    font-size: 22px;
     margin-left: 4%;
     line-height: 2;
+    letter-spacing: .01cm;
+    /* font-family: 'Pangram content', serif; */
   }
   
   a{
+    font-family: 'Pangram heading', serif;
     color: white;
     font-size: 28px;
     text-decoration: none;
