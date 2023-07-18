@@ -4,19 +4,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./styleprojectpage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Move A Bit</title>
 </head>
 <body>
     <nav>
         <a href="./index.html" class="logo">Paridhi</a>
         <section> 
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
             <a href="./codelab.html">CodeLab</a>
             <a href="./resume.html">Resume</a>
             <a href="./about.html" >About</a>
         </section>
     </nav>
-<hr height="5px">
-<br>
+
 <div class="image-flex-container">
     <img class="one" src="./Images/projects/MoveABit.png">
 </div>
@@ -34,7 +37,9 @@
 <div class="image-flex-container">
     
     <img class="two" src="./Images/projects/MoveABit.png">
-    <video class="two" poster="./Images/mab/placeholder.png" controls>
+</div>
+<div>
+    <video class="one" poster="./Images/mab/placeholder.png" controls>
         <source src="./Images/mab/MABMicroscopic.mov" type="video/mp4">
       Your browser does not support the video tag.
     </video>
@@ -45,5 +50,11 @@
 </div>
 <h2>Working</h2>
 <p>Move A Bit is a live motion capture project created during the Quantum Design Jam at The New School with IBM. The project brings the concepts of quantum computing to life through a fun and interactive experience. It visually showcases the concept of entanglement through the interaction of the viewer with the system.  Just as a special correlation exists between qubits, the particles in Move a Bit have a special relationship with the subject in motion. Quibit is the basic  unit in quantum computing into which quantum information is stored/ encoded.  In this project, movement produces the quantum state with all quantum possibilities represented in different colors. Stillness represents the observed collapsed, classical state.</p>
+<div class="scroll-container">
+    <img src="Images/mab/placeholder.png">
+    <img src="Images/echo/alt.png">
+    <img src="Images/computerized/2.png">
+</div>
+<script src="project.js"></script>
 </body>
 </html>

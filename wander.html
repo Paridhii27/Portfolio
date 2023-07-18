@@ -4,21 +4,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./styleprojectpage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Wonder, Wander, Repeat</title>
 </head>
 <body>
     <nav>
         <a href="./index.html" class="logo">Paridhi</a>
         <section> 
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
             <a href="./codelab.html">CodeLab</a>
             <a href="./resume.html">Resume</a>
             <a href="./about.html" >About</a>
         </section>
     </nav>
+<hr height="5px"><br>
 <h1>Wonder, Wander, Repeat</h1>
-<p> I’m not here, I’m not there <br>
-    I’m just kind of floating in between.
-    </p>
+<p> Wonder, Wander, Repeat is an application we developed as an assistance for planning travels according to user preferences such as temperature, precipitation and landforms.</p>
+<h3>technical</h3>
+<p>The GUI of application is developed using Tkinter widgets. Plotting of maps of USA for depicting information is done by using plotly library graph objects Choropleth. The maps show relevant information on mouse hover. The data to be plotted by these maps is provided in the form of csv files. Panda library is used for reading information from csv files.</p>
     <p>
         A paradox<br>
         Existing in phases
@@ -27,5 +32,6 @@
     
     <img class="one" src="./Images/wander/wander.png">
 </div>
+<script src="project.js"></script>
 </body>
 </html>

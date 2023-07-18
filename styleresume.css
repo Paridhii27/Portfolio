@@ -60,3 +60,21 @@
   .linearGrid img:hover{
     opacity: 1;
   }
+
+
+  /* Style buttons */
+.btn {
+  background-color: #cec9f0;
+  border: none;
+  border-radius: 20x;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 28px;
+  font-family: 'Pangram Pangram';
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}

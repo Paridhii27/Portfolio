@@ -6,6 +6,7 @@
         <title>Paridhi's Portfolio</title>
         <link rel="icon" type="image/x-icon" href="/images/cursor.png">
         <link rel="stylesheet" type="text/css" href="./styleindex.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         
     </head>
     <body>
@@ -21,23 +22,31 @@
             </ul>
         </nav> -->
 
-        <nav>
+        <nav class="topnav" id="myTopnav">
             <a href="./index.html" class="logo">Paridhi</a>
             <div> 
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
                 <a href="./codelab.html">CodeLab</a>
                 <a href="./resume.html">Resume</a>
                 <a href="./about.html" >About</a>
             </div>
         </nav>
+
          <section id="section02" class="scroll">
-            <img src="./Images/projects/MoveABit.png" alt="Particles in motion">
-            <a href="./moveabit.html" id ="title"><h2>Move A Bit</h2></a>
+            <div>
+                <br><br><br>
+                <img src="./Images/projects/MoveABit.png" alt="Particles in motion">
+                <a href="./moveabit.html" id ="title"><h2>Move A Bit</h2></a>
+            </div>
             <p>Move a Bit is a live motion capture project bringing quantum computing to life through an interactive display that visually showcases entanglement. </p>
             <p> Quantum Computing | Touchdesigner | 2022 </p><br>
             <a href="#section03" id="special"><span></span></a>
          </section>
 
          <section id="section03" class="scroll">
+            <br><br><br>
             <img src="./Images/projects/echo.png" alt="Glitch effect"> 
             <a href="./echo.html" id ="title"><h2>Echoes from another place and time</h2></a>
             <p>Echoes from another place and time is a visual narrative created in touchdesigner exploring the idea of alternative parallel realities </p>
@@ -46,6 +55,7 @@
          </section>
          
          <section id="section04" class="scroll">
+            <br><br><br>
             <img src="./Images/projects/datastore.png" alt="Scene in unity">
             <a href="./datastore.html" id ="title"><h2>Warped memories of digital ghosts</h2></a>
                 <p> This project welcomes you to a world in which people go to a data store to access their digital memories in the form of differently flavoured cookies. Each cookie tells the person about some particular aspect of their life making the person question how digitally vulnerable they can be and how twisted is the idea of data monopolisation.</p>
@@ -54,6 +64,7 @@
          </section>
 
          <section id="section05" class="scroll">
+            <br><br><br>
             <img src="./Images/projects/wander.png" alt="GUI of application for travel">
             <a href="./wander.html" id ="title"><h2>Wonder, Wander, Repeat</h2></a>
                 <p> This is an app which can be of great help during travel planning as it gives the user information about temperature, precipitation and landform among other things according to their preferences in the form of simple, fun data visualizations.</p>
@@ -62,6 +73,7 @@
          </section>
 
          <section id="section06" class="scroll">
+            <br><br><br>
             <img src="./Images/TempSensor/tempSensing.png" alt="GUI of application for travel">
             <a href="./temperature.html" id ="title"><h2>Temperature of emotions</h2></a>
                 <p>According to research, there is a direct corelation between temperature and emotions. This device measures the external temperature and gives corresponding response in the form of different colour mappings representing varied emotions.</p>
@@ -70,10 +82,12 @@
          </section>
 
          <section id="section07" class="scroll">
+            <br><br><br>
             <img src="./Images//computerized/1.png">
             <a href="./computerMem.html" id ="title"><h2>Computerized Memories</h2></a>
                 <p>According to research, there is a direct corelation between temperature and emotions. This device measures the external temperature and gives corresponding response in the form of different colour mappings representing varied emotions.</p>
                 <p> Unity | Blender | 2023 </p>
+                <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
          </section>
 
          <br><br>
@@ -114,6 +128,6 @@
         <!-- </main> -->
         
         </div>
-        <script src="main.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>
