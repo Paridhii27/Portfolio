@@ -10,9 +10,8 @@
     </head>
     <body>
         <!--<h1>Paridhi</h1>-->
-        <nav>
+        <nav class="topnav" id="myTopnav">
             <a href="./index.html" class="logo">Paridhi</a>
-            <!-- <a href="./index.html" class="logo"><img src="./Images/homepage/a3.png"></a> -->
             <section> 
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                     <i class="fa fa-bars"></i>
@@ -26,9 +25,8 @@
         <div class="linearGrid">
             <img src="./Images/Resume/RESUME.png" width="50%">
         </div>
-        <button class="btn"><i class="fa fa-download"></i> Download</button>
-        <a href="/imageS/Resume/RESUME.png" download>
-            <img src="/Images/Resume/download.png" alt="Resume" width="13%">
-        </a>
+        <button class="btn" onclick="downloadImage()"><i class="fa fa-download"></i> Download</button>
+        <a id="downloadLink" href="/imageS/Resume/RESUME.png" download></a>
+        <script src="resume.js"></script> 
     </body>
 </html>
