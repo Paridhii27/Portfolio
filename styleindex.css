@@ -52,10 +52,41 @@ a{
 p {
   font-family: 'Pangram content', serif;
   color: white;
-  font-size: 23px;
+  font-size: 21px;
   margin-left: 10%;
   margin-bottom: 50px;
 }
+
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  list-style-type: none;
+
+  li {
+    padding: 6px 0;
+
+    a {
+      --fill-color: #198CE6;
+      position: relative;
+      display: block;
+      padding: 4px 0;
+      font: 700 3rem Raleway, sans-serif;
+      text-decoration: none;
+      text-transform: uppercase;
+      -webkit-text-stroke: 2px var(--fill-color);
+      background: linear-gradient(var(--fill-color) 0 100%) left / 0 no-repeat;
+      color: transparent;
+      background-clip: text;
+      transition: 0.5s linear;
+
+      &:hover {
+        background-size: 100%;
+      }
+    }
+  }
+}
+
 
 img{
   width:72%;
@@ -85,6 +116,11 @@ img:hover{
 }
 #section02{
   margin-top: 100vh;
+}
+
+.logo {
+  font-size: 28px;
+  margin: 3%;
 }
 
 main{

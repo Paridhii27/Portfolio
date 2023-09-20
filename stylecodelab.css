@@ -126,3 +126,8 @@
   img{
     border-radius: 15px
   }
+
+  .logo {
+    font-size: 28px;
+    margin: 3%;
+  }

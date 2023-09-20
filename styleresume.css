@@ -96,8 +96,9 @@
 
   /* Style buttons */
 .btn {
-  background-color: #cec9f0;
-  border: none;
+  /* background-color: #cec9f0; */
+  background-color: black;
+  border:1%;
   border-radius: 10px;
   color: white;
   padding: 12px 20px;
