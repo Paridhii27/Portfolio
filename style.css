@@ -18,6 +18,7 @@ body {
   display: block;
   box-sizing: border-box; /* The box border applies to the inside of the div and not to the outside */
   font-family: "Pangram Pangram", serif;
+  cursor: url("Images/pointer.png"), auto;
 }
 
 #special {
@@ -238,8 +239,4 @@ button:hover {
     background-color: #F04A49;
     color: #FFF;
     transition: all 0.3s ease 0s;
-}
-
-.c1 {
-  font-size: 40px;
 }
