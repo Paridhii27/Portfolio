@@ -25,6 +25,15 @@ nav {
   .nav .icon {
     display: none;
   }
+
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
   
   @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
@@ -48,7 +57,7 @@ nav {
       top: 0;
     }
     .topnav.responsive a {
-      float: none;
+      float: right;
       display: block;
       text-align: left;
     }
