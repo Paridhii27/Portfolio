@@ -6,9 +6,10 @@
 
 @font-face {
   font-family: 'Pangram content';
-  src: url('/assets/PPEditorialOld-Regular.otf') format('opentype');
+  src: url('/assets/PPWoodland-Ultralight.otf') format('opentype');
   font-weight: 100;
 }
+
 /* *{
   border: 0.5px solid blue;
 } */
@@ -24,50 +25,71 @@ body {
    background-color: black;
    height: fit-content;
    color: white;
-   display: block;
+   /* display: block; */
    box-sizing: border-box; /* The box border applies to the inside of the div and not to the outside */
    font-family: 'Pangram Pangram', serif;
    /* cursor: url('./Images/cursor.png'), auto; */
-   overflow-x: hidden;
+   /* overflow-x: hidden; */
 }
-
 
 h1{
-  margin:25px;
   color: #c8bfdb;
-}
-
-h2{
-  /* margin:26px; */
-  margin-left: 2%;
+  margin-left: 10vw;
 }
 
 a{
-  margin:2%;
   color: white;
   font-size: 28px;
   text-decoration: none;
+  margin-left: 10vw;
 } 
 
 p {
   font-family: 'Pangram content', serif;
   color: white;
   font-size: 21px;
-  margin-left: 10%;
-  margin-bottom: 50px;
+  margin-left: 10vw;
 }
 
+.homepage-container {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.container {
+  display: flex;
+  /* justify-content: center; */
+  flex-wrap: wrap;
+ 
+
+}
+
+.homepage-img {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("./Images/homepage.gif")
+}
 
 img{
-  width:72%;
-  opacity: 0.9;
-  margin-left: 15%;
-  margin-bottom: 50px;
+  width:70vw;
   border-radius: 10px;
+  padding: 10vw;
+  transition: transform .2s;
 }
 
 img:hover{
   opacity: 1;
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+}
+
+.thumbnail {
+  display: flex;
+  flex-wrap: wrap;
+  align-self:flex-end;
 }
 
 #home {
@@ -78,12 +100,12 @@ img:hover{
   left: 0;
   margin-left: 0 !important;
   object-fit: cover;
-  /* top:0%; */
-  /* margin-left:-10%; */
   z-index: -1;
   border-radius: 0;
   overflow-x: hidden; 
+  padding: 0%;
 }
+
 #section02{
   margin-top: 100vh;
 }
@@ -91,31 +113,6 @@ img:hover{
 .logo {
   font-size: 28px;
   margin: 3%;
-}
-
-main{
-  height: 100vh;
-  width: 100vw;
-  display: grid; 
-  grid-template-columns: repeat(9 / 11vw);
-  grid-template-rows: repeat ( 9 / 11vh);
-  grid-gap: 0;
-  padding: 0;
-  margin: 0;
-  display: flex;
-}
-
-.homepage {
-  /* margin: 50px 50px; */
-}
-.homepage img{
-  width:100%;
-  opacity: 1;
-  margin-bottom: 50px;
-}
-
-.hovertext {
-  position: relative;
 }
 
 section {
@@ -150,13 +147,9 @@ section:after {
   transition: opacity .3s;
 }
 
+
 #title {
-  position: absolute;
-  left:8%;
-  top:30%;
-  /* left: 50%; */
-  z-index: 2;
-  /* display: inline-block; */
+  display: inline-block;
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
   color: #fff;
@@ -218,7 +211,7 @@ section a span {
   z-index: 99; /* Make sure it does not overlap */
   border: 1px; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: #cec9f0; /* Set a background color */
+  background-color: transparent; /* Set a background color */
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
@@ -238,42 +231,6 @@ section a span {
   border: 0px solid black;
 } */
 
-div:nth-of-type(1){
-  grid-column: 2/ 4;
-  grid-row:  1 / 3;
-}
-
-div:nth-of-type(1) img:hover{
-  opacity: 0.5; 
-}
-
-div:nth-of-type(2){
-  grid-column: 1/ 2;
-  grid-row: 4 / 6;
-}
-
-div:nth-of-type(2) img:hover{
-  opacity: 0.5; 
-}
-
-div:nth-of-type(3){
-  grid-column: 1/ 5;
-  grid-row: 5 / 7;
-}
-
-div:nth-of-type(3) img:hover{
-  opacity: 0.5; 
-}
-
-div:nth-of-type(4){
-  grid-column: 3/4;
-  grid-row: 4/ 5;
-}
-
-div:nth-of-type(4) img:hover{
-  opacity: 0.5; 
-}
-
 
 /* .logo {
   display: flex;
@@ -283,19 +240,15 @@ div:nth-of-type(4) img:hover{
   position: absolute;
 } */
 
+footer {
+  background-color: #c8bfdb;
+}
 
-/* .image-flex-container {
+.contacts {
   display: flex;
-  justify-content: space-between;
-  margin: 40px;
-  padding: 10px;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 10%;
+  text-align: center;
+  /* background-color: blue; */
 }
-
-.image-flex-container img {
-  opacity: 0.7;
-  object-fit: contain;
-}
-
-.image-flex-container img:hover {
-  opacity: 1;
-} */

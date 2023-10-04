@@ -1,175 +1,245 @@
 @font-face {
-    font-family: 'Pangram Pangram';
-    src: url('/assets/PPRightSans-Medium.otf') format('opentype');
-    font-weight: 100;
-  }
-  /**{
+  font-family: "Pangram Pangram";
+  src: url("/assets/PPRightSans-Medium.otf") format("opentype");
+  font-weight: 100;
+}
+/**{
     border: 0.5px solid blue;
   }*/
-  body {
-    /* margin-top: 40px;
+body {
+  /* margin-top: 40px;
      margin-right: 30px;
      margin-bottom: 40px;
      margin-left: 30px;*/
-     max-width: 1200px;
-     margin: 0 auto;
-     background-color: black;
-     color: white;
-     display: block;
-     box-sizing: border-box; /* The box border applies to the inside of the div and not to the outside */
-     font-family: 'Pangram Pangram', serif;
-  }
-  
-  #special{
-    bottom: 150px !important;
-    left: 45%;
-  }
-  
-  h1{
-    margin-top:5%;
-  }
-  p {
-    color: white;
-    font-size: 22px;
-    line-height: 2;
-  }
-  
-  a{
-    color: white;
-    font-size: 28px;
-    text-decoration: none;
-  } 
-  
-  img{
-    opacity:0.9;
-    border-radius: 2%;
-  }
-  nav {
-    display: flex;
-    justify-content: space-between;
-    /* margin: 20px; */
-  }
-  
-  nav section {
-    list-style-type: none;
-    margin: 0;
-    padding: 20px;
-    width: fit-content;
-    display: flex;
-  }
-  
-  nav section a{
-    margin-left: 20px;
-    padding: 10px;
-  }
-  
-  nav a:hover {
-    opacity: 1;
-  }
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: black;
+  color: white;
+  display: block;
+  box-sizing: border-box; /* The box border applies to the inside of the div and not to the outside */
+  font-family: "Pangram Pangram", serif;
+}
 
-  .nav .icon {
+#special {
+  bottom: 150px !important;
+  left: 45%;
+}
+
+h1 {
+  margin-top: 5%;
+}
+
+p {
+  color: white;
+  font-size: 22px;
+  line-height: 2;
+  margin: 5vw 2vw 6vw 6vw;
+}
+
+a {
+  color: white;
+  font-size: 28px;
+  text-decoration: none;
+}
+
+img {
+  opacity: 0.9;
+  border-radius: 2%;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  /* margin: 20px; */
+}
+
+nav section {
+  list-style-type: none;
+  margin: 0;
+  padding: 20px;
+  width: fit-content;
+  display: flex;
+}
+
+nav section a {
+  margin-left: 20px;
+  padding: 10px;
+}
+
+nav a:hover {
+  opacity: 1;
+}
+
+.nav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
     display: none;
   }
-  
-  @media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-      float: right;
-      display: block;
-    }
+  .topnav a.icon {
+    float: right;
+    display: block;
   }
-
-  @media screen and (min-width: 601px) {
-    .topnav a.icon {
-        display: none; /* Hide the icon on larger screens */
-    }
 }
-  
-  @media screen and (max-width: 600px) {
-    .topnav.responsive {position: relative;}
-    .topnav.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
+
+@media screen and (min-width: 601px) {
+  .topnav a.icon {
+    display: none; /* Hide the icon on larger screens */
   }
-  
-  .logo {
-    font-size: 28px;
-    margin: 3%;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
   }
-  
-  .content {
-    margin-left: 25px;
-  
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
   }
-  
-  .image-flex-container {
-    display: flex;
-    justify-content: space-between;
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
   }
-  
-  .image-flex-container img {
-    opacity: 1;
-    object-fit: contain;
-  }
-  
-  .image-flex-container img:hover {
-    opacity: 1;
-  }
-  
-  .two{
-    width: 48%;
-  }
-  
-  .one{
-    width: 100%;
-  }
-  
-  .row {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    padding: 0 4px;
-    margin: 5%;
-  }
-  
-  /* Create four equal columns that sits next to each other */
+}
+
+.logo {
+  font-size: 28px;
+  margin: 3%;
+}
+
+.content {
+  margin-left: 25px;
+}
+
+.image-flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-flex-container img {
+  opacity: 1;
+  object-fit: contain;
+}
+
+.image-flex-container img:hover {
+  opacity: 1;
+}
+
+.two {
+  width: 48%;
+}
+
+.one {
+  width: 100%;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  margin: 5%;
+}
+
+.column {
+  -ms-flex: 25%;
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+  margin-left: 5%;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
   .column {
-    -ms-flex: 25%;
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
-    margin-left: 5%;
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
   }
-  
-  .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    margin: 10vw;
+    margin-left: 10vw;
+    max-width: 70%;
   }
-  
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 800px) {
-    .column {
-      -ms-flex: 50%;
-      flex: 50%;
-      max-width: 50%;
-    }
-  }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column {
-      -ms-flex: 100%;
-      flex: 100%;
-      margin: 10vw;
-      max-width: 70%;
-    }
-  }
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 60%;
+  text-align: center;
+  margin-left: 15vw;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  padding: 10px;
+  width: 280px;
+  left: 50%;
+  margin-left: -150px;
+  height: 180px;
+  top: 50%;
+  margin-top: -100px;
+  background: black;
+  border: 3px solid #F04A49;
+  z-index: 20;
+}
+
+#popup:after {
+  position: fixed;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: -2;
+}
+
+#popup:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: black;
+  z-index: -1;
+}
+
+button {
+    margin-top: 50px;
+    background-color: rgba(255,255,255,0.3);
+    color: blue;
+    font-size: 25px;
+    padding: 10px 20px;
+    
+}
+
+button:hover {
+    background-color: #F04A49;
+    color: #FFF;
+    transition: all 0.3s ease 0s;
+}
+
+.c1 {
+  font-size: 40px;
+}
