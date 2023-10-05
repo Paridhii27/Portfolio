@@ -10,9 +10,10 @@
   font-weight: 100;
 }
 
-/* *{
+*{
   border: 0.5px solid blue;
-} */
+  box-sizing: border-box;
+}
 
 .module {
   cursor: url('./Images/cursor.png'), auto;	
@@ -41,47 +42,63 @@ a{
   color: white;
   font-size: 28px;
   text-decoration: none;
-  margin-left: 10vw;
+  margin: 5% 10%;
 } 
+
+a:hover {
+  color: aqua;
+}
+
+#id:hover{
+  color:white;
+}
 
 p {
   font-family: 'Pangram content', serif;
   color: white;
   font-size: 21px;
-  margin-left: 10vw;
+  margin:5% 10%;
 }
 
 .homepage-container {
   display: flex;
   flex-direction: column;
-
 }
 
-.container {
-  display: flex;
-  /* justify-content: center; */
-  flex-wrap: wrap;
- 
-
+#projects-section .container {
+   display: block !important;
+   width: 40vw;
+   text-align: left;
 }
 
 .homepage-img {
   width: 100vw;
   height: 100vh;
-  background-repeat: no-repeat;
+  /* object-fit: cover; */
+  /* background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("./Images/homepage.gif");
+  background-image: url("./Images/homepage.gif"); */
   position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
 }
 
+.homepage-img img{
+  all: unset;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 img{
-  width:70vw;
+  width:80%;
+  height: 300px;
+  object-fit: cover;
   border-radius: 10px;
-  padding: 10vw;
+  margin-top: 5%;
+  margin-bottom: 5%;
   transition: transform .2s;
+  border: 0.4px solid #fff;
 }
 
 img:hover{
@@ -111,14 +128,10 @@ img:hover{
   padding: 0%;
 }
 
-#section02{
-  margin-top: 100vh;
-}
-
-.logo {
+/* .logo {
   font-size: 28px;
   margin: 3%;
-}
+} */
 
 #myBtn {
   display: none; /* Hidden by default */
@@ -173,4 +186,28 @@ img:hover{
   height: fit-content;
   width: fit-content;
   margin-top: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.row {
+  display: flex;
+  width: 75%;
+}
+
+.column {
+  flex: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+  #projects-section{
+    display: block;
+  }
+  #projects-section .container{
+    width: 100%;
+  }
 }

@@ -3,19 +3,23 @@ nav {
     justify-content: space-between;
     overflow: hidden;
     /* margin: 20px; */
+    width: 100%;
   }
   
   nav div {
     list-style-type: none;
     margin: 0;
-    padding: 10px;
-    width: fit-content;
+    /* padding: 10px; */
+    width: 100%;
     display: flex;
+    justify-content: right;
   }
   
   nav div a{
-    margin-left: 20px;
-    padding: 10px;
+    padding: 0;
+    margin: 15px;
+    /* margin-left: 20px;
+    padding: 10px; */
   }
   
   nav a:hover {
@@ -27,12 +31,14 @@ nav {
   }
 
   .topnav a {
-    float: left;
+    /* float: left; */
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+    padding: 0;
+    margin: 15px;
+    /* padding: 14px 16px; */
+    text-decoration: none; 
   }
   
   @media screen and (max-width: 600px) {
@@ -50,14 +56,13 @@ nav {
   }
   
   @media screen and (max-width: 600px) {
-    .topnav.responsive {position: relative;}
+    .topnav.responsive {position:relative; display:flex;}
+    .topnav.responsive div{display: flex; flex-direction:column; float: right; align-items:end;}
     .topnav.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
+      float: right;
     }
     .topnav.responsive a {
-      float: right;
+      /* float: right; */
       display: block;
       text-align: left;
     }
