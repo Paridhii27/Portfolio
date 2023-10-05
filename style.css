@@ -5,12 +5,9 @@
 }
 /**{
     border: 0.5px solid blue;
-  }*/
+}*/
+
 body {
-  /* margin-top: 40px;
-     margin-right: 30px;
-     margin-bottom: 40px;
-     margin-left: 30px;*/
   max-width: 1200px;
   margin: 0 auto;
   background-color: black;
@@ -98,6 +95,15 @@ img {
   width: 100%;
 }
 
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 60%;
+  text-align: center;
+  margin-left: 15vw;
+}
+
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
   .column {
@@ -116,15 +122,10 @@ img {
     margin-left: 10vw;
     max-width: 70%;
   }
-}
 
-.contacts {
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
-  width: 60%;
-  text-align: center;
-  margin-left: 15vw;
+  .contact {
+    width: 500px;
+  }
 }
 
 .popup {
@@ -138,7 +139,7 @@ img {
   top: 50%;
   margin-top: -100px;
   background: black;
-  border: 3px solid #F04A49;
+  border: 3px solid #f04a49;
   z-index: 20;
 }
 
@@ -149,7 +150,7 @@ img {
   left: 0;
   bottom: 0;
   right: 0;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   z-index: -2;
 }
 
@@ -165,16 +166,15 @@ img {
 }
 
 button {
-    margin-top: 50px;
-    background-color: rgba(255,255,255,0.3);
-    color: blue;
-    font-size: 25px;
-    padding: 10px 20px;
-    
+  margin-top: 50px;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: blue;
+  font-size: 25px;
+  padding: 10px 20px;
 }
 
 button:hover {
-    background-color: #F04A49;
-    color: #FFF;
-    transition: all 0.3s ease 0s;
+  background-color: #f04a49;
+  color: #fff;
+  transition: all 0.3s ease 0s;
 }

@@ -31,13 +31,14 @@
      color: white;
      /* display: block; */
      box-sizing: border-box; /* The box border applies to the inside of the div and not to the outside */
+     font-family: 'Pangram heading', serif;
   }
 
   h1{
     font-family: 'Pangram heading', serif;
-    margin:1%;
+    margin:4% 1%;
     color: black;
-    font-size: 50px;
+    font-size: 36px;
     text-shadow: -1px 1px 0 #ffffff,
 				  2px 1px 0 #ffffff,
 				 1px -1px 0 #ffffff;
@@ -226,4 +227,13 @@
   .homepage-container {
     display: flex;
     flex-direction: column;
+  }
+
+  #research {
+    font-family: 'Pangram trial', serif;
+    color: white;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: .01cm;
+    padding:0;
   }
