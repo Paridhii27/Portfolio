@@ -34,7 +34,7 @@ body {
    color: white;
    /* display: block; */
    box-sizing: border-box; /* The box border applies to the inside of the div and not to the outside */
-   font-family: 'Pangram Pangram', serif;
+   font-family: 'Pangram content', serif;
    /* cursor: url('./Images/cursor.png'), auto; */
    /* overflow-x: hidden; */
 }
@@ -50,6 +50,7 @@ a{
   font-size: 28px;
   text-decoration: none;
   margin: 5% 10%;
+  font-family: 'Pangram Panagram', serif;
 } 
 
 a:hover {
