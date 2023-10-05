@@ -10,10 +10,10 @@
   font-weight: 100;
 }
 
-*{
+/* *{
   border: 0.5px solid blue;
   box-sizing: border-box;
-}
+} */
 
 .module {
   cursor: url('./Images/cursor.png'), auto;	
@@ -46,7 +46,7 @@ a{
 } 
 
 a:hover {
-  color: aqua;
+  color: #cae0e6;
 }
 
 #id:hover{
@@ -90,6 +90,7 @@ p {
   width: 100%;
   object-fit: cover;
 }
+
 img{
   width:80%;
   height: 300px;
@@ -112,20 +113,6 @@ img:hover{
   display: flex;
   flex-wrap: wrap;
   align-self:flex-end;
-}
-
-#home {
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin-left: 0 !important;
-  object-fit: cover;
-  z-index: -1;
-  border-radius: 0;
-  overflow-x: hidden; 
-  padding: 0%;
 }
 
 /* .logo {
@@ -155,21 +142,6 @@ img:hover{
   background-color: #555; /* Add a dark-grey background on hover */
 }
 
-/* div{
-  display: flex;
-  justify-content: center;
-  border: 0px solid black;
-} */
-
-
-/* .logo {
-  display: flex;
-  font-size: 28px;
-  top: 0;
-  margin: 3%;
-  position: absolute;
-} */
-
 .contacts {
   display: flex;
   flex-direction: row;
@@ -178,6 +150,7 @@ img:hover{
   text-align: center;
   /* background-color: blue; */
 }
+
 #landing-section{
   height: fit-content;
   width: fit-content;
@@ -200,7 +173,7 @@ img:hover{
   flex: 50%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .column {
     width: 100%;
   }

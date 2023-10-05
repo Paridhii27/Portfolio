@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'Pangram Pangram';
+    src: url('/assets/PPRightSans-Medium.otf') format('opentype');
+    font-weight: 100;
+  }
+  /**{
+    border: 0.5px solid blue;
+  }*/
+  body {
+    /* margin-top: 40px;
+     margin-right: 30px;
+     margin-bottom: 40px;
+     margin-left: 30px;*/
+     max-width: 1200px;
+     margin: 0 auto;
+     background-color: black;
+     color: white;
+     display: block;
+     box-sizing: border-box; /* The box border applies to the inside of the div and not to the outside */
+     font-family: 'Pangram Pangram', serif;
+  }
+  
+  p {
+    color: white;
+    font-size: 36px;
+  }
+  
+  a{
+    color: white;
+    font-size: 28px;
+    text-decoration: none;
+    margin: 5% 10%;
+  } 
+  
+  .image-flex-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .image-flex-container img {
+    opacity: 0.7;
+    object-fit: contain;
+  }
+  
+  .image-flex-container img:hover {
+    opacity: 1;
+  }
+  
+  .two{
+    width: 48%;
+    
+  }
+  
+  .one{
+    width: 100%;
+    height:50%;
+  }
+  .linearGrid {
+    margin: 50px 100px;
+  }
+  .linearGrid img{
+    width:100%;
+    opacity: 0.7;
+  }
+  
+  .linearGrid img:hover{
+    opacity: 1;
+    cursor:url('./Images/cursor.png');
+  }
+
+  img{
+    border-radius: 15px
+  }
+
+  .logo {
+    font-size: 28px;
+    margin: 3%;
+  }
+
+  
