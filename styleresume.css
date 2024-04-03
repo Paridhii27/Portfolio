@@ -1,58 +1,63 @@
 @font-face {
-    font-family: 'Pangram Pangram';
-    src: url('/assets/PPRightSans-Medium.otf') format('opentype');
-    font-weight: 100;
-  }
- 
-  body {
+  font-family: "Pangram Pangram";
+  src: url("/assets/PPRightSans-Medium.otf") format("opentype");
+  font-weight: 100;
+}
 
-     max-width: 1200px;
-     margin: 0 auto;
-     background-color: black;
-     height: 100%;
-     color: white;
-     display: block;
-     box-sizing: border-box; /* The box border applies to the inside of the div and not to the outside */
-     font-family: 'Pangram Pangram', serif;
-  }
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: black;
+  height: 100%;
+  color: white;
+  display: block;
+  box-sizing: border-box; /* The box border applies to the inside of the div and not to the outside */
+  font-family: "Pangram Pangram", serif;
+}
 
-  a{
-    color: white;
-    font-size: 28px;
-    text-decoration: none;
-    margin: 5% 10%;
-  } 
+a {
+  color: white;
+  font-size: 28px;
+  text-decoration: none;
+  margin: 5% 10%;
+}
 
-  .linearGrid {
-    margin: 50px 20px;
-  }
-  .linearGrid img{
-    width:100%;
-    opacity: 1;
-  }
-  
-  .linearGrid img:hover{
-    opacity: 1;
-  }
+.linearGrid {
+  margin: 50px 20px;
+}
+.linearGrid img {
+  width: 100%;
+  opacity: 1;
+}
 
+.linearGrid img:hover {
+  opacity: 1;
+}
 
-  /* Style buttons */
+/* Style buttons */
 .btn {
   /* background-color: #cec9f0; */
   background-color: black;
-  border:1%;
+  border: 1%;
   border-radius: 10px;
   color: white;
   padding: 12px 20px;
   cursor: pointer;
   font-size: 24px;
-  font-family: 'Pangram Pangram';
+  font-family: "Pangram Pangram";
   margin-left: 2%;
 }
 
 /* Darker background on mouse-over */
 .btn:hover {
-  background-color: RoyalBlue;
+  /* background-color: RoyalBlue; */
+  background: linear-gradient(
+    60deg,
+    #c8aff0,
+    #2b50e5
+  ); /* Gradient effect on hover */
+  color: #fff;
+  transition: background-color 0.5s ease;
 }
 
 @media screen and (max-width: 800px) {
@@ -61,6 +66,3 @@
     max-width: 50%;
   }
 }
-
-
-

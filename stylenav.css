@@ -1,70 +1,134 @@
+@font-face {
+  font-family: "main font";
+  src: url("/assets/veteran_typewriter.ttf") format("truetype");
+  font-weight: 100;
+}
+
 nav {
-    display: flex;
-    justify-content: space-between;
-    overflow: hidden;
-    /* margin: 20px; */
-    width: 100%;
-  }
-  
-  nav div {
-    list-style-type: none;
-    margin: 0;
-    /* padding: 10px; */
-    width: 100%;
-    display: flex;
-    justify-content: right;
-  }
-  
-  nav div a{
-    padding: 0;
-    margin: 15px;
-    font-family: 'Pangram Panagram', serif;
-    /* margin-left: 20px;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  /* margin: 20px; */
+  width: 100%;
+}
+
+nav div {
+  list-style-type: none;
+  margin: 0;
+  /* padding: 10px; */
+  width: 100%;
+  display: flex;
+  justify-content: right;
+}
+
+nav div a {
+  padding: 0;
+  margin: 15px;
+  font-family: "main font";
+  /* margin-left: 20px;
     padding: 10px; */
+}
+
+nav a:hover {
+  opacity: 0.7;
+}
+
+.nav .icon {
+  display: none;
+}
+
+.topnav {
+  margin-top: 10px;
+}
+
+.topnav a {
+  /* float: left; */
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 0;
+  margin: 15px;
+  /* padding: 14px 16px; */
+  text-decoration: none;
+}
+
+topnav .icon i:before {
+  content: "\2630"; /* Unicode character for hamburger icon */
+  font-size: 34px; /* Adjust icon size */
+  transition: transform 0.4s ease; /* Smooth transition for transform property */
+}
+
+/* Define animation for transforming into a cross */
+.topnav.responsive .icon i:before {
+  content: "\00D7"; /* Unicode character for cross icon */
+  font-size: 34px;
+  animation: rotateCross 0.4s forwards; /* Apply animation */
+}
+
+/* Keyframes for cross animation */
+@keyframes rotateCross {
+  0% {
+    transform: rotate(0deg);
   }
-  
-  nav a:hover {
-    opacity: 0.7;
+  50% {
+    transform: rotate(22.5deg);
   }
-  
-  .nav .icon {
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
     display: none;
   }
-
-  .topnav a {
-    /* float: left; */
+  .topnav a.icon {
+    float: right;
     display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 0;
-    margin: 15px;
-    /* padding: 14px 16px; */
-    text-decoration: none; 
   }
-  
-  @media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-      float: right;
-      display: block;
-    }
-  }
+}
 
-  @media screen and (min-width: 601px) {
-    .topnav a.icon {
-        display: none; /* Hide the icon on larger screens */
-    }
+@media screen and (min-width: 601px) {
+  .topnav a.icon {
+    display: none; /* Hide the icon on larger screens */
   }
-  
-  @media screen and (max-width: 600px) {
-    .topnav.responsive {position:relative; display:flex;}
-    .topnav.responsive div{display: flex; flex-direction:column; float: right; align-items:end;}
-    .topnav.responsive .icon {
-      float: right;
-    }
-    .topnav.responsive a {
-      /* float: right; */
-      display: block;
-      text-align: left;
-    }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+    display: flex;
   }
+  .topnav.responsive div {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    align-items: end;
+  }
+  .topnav.responsive .icon {
+    float: right;
+  }
+  .topnav.responsive a {
+    /* float: right; */
+    display: block;
+    text-align: left;
+  }
+}
+
+.site-footer {
+  background-color: #333; /* Dark background for footer */
+  color: #fff; /* White text color */
+  text-align: center; /* Centering the content */
+  padding: 20px 0; /* Padding around the footer content */
+}
+/* .logo {
+  font-size: 28px;
+  margin: 3%;
+} */
+
+/* Ensures the layout remains horizontal and responsive */
+/* @media (max-width: 768px) {
+  .header-container {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+} */

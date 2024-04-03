@@ -24,6 +24,7 @@
 <div class="image-flex-container">
     <img class="one" src="./Images/projects/MoveABit.png">
 </div>
+
 <br>
 <h1>Move A Bit</h1>
 <div class="topics">
@@ -36,28 +37,38 @@
         <div class="column">
         </div>
         <div class="column">
-            <p style="font-weight: bold;">A collaboration with Isabella Wang, Youn Hwang, Kalinda Panholzer and Si Ran Pang</p>
-            <p style="font-weight: bold;">Role: Backend developer, quantum computing, connecting to touchdesigner</p>
             <p>Move A Bit is a live motion capture project created during the Quantum Design Jam at The New School with IBM. The project brings the concepts of quantum computing to life through a fun and interactive experience. It visually showcases the concept of entanglement through the interaction of the viewer with the system.  Just as a special correlation exists between qubits, the particles in Move a Bit have a special relationship with the subject in motion. Quibit is the basic unit in quantum computing into which quantum information is stored/ encoded.  In this project, movement produces the quantum state with all quantum possibilities represented in different colors. Stillness represents the observed collapsed, classical state.We are entangled with the system.</p>
             <p> This project was exhibited at the Microscope Gallery for the Quantum Art Exhibition in March 2023.</p>
-            <div class="image-flex-container">
-                <img class="one" src="./Images/mab/data.png">
-            </div>
         </div>
     </div>
 </div>
 
-</div>
-<h2>Generating quantum data</h2>
+</div>      
+<div class="container">
+    <div class="scrollable-section">
+      <h2>Generating quantum data</h2>
+      <div class="image-flex-container">
+        <img class="one" src="./Images/mab/data.png">
+    </div>
 <p>The project was created in touchdesigner and used quantum data. To generate the quantum data to guide the properties of our motion reactive particles, we used the W-state to entangle three quibits. W-state is a means of entangling 3 quibits robustly especially when a quibit is lost. The quantum circuit was composed of reset, RY, CU and controlled-x gates. The circuit also had three measurement info or z-basis at the end to measure the quibit values in the classical register. After completing the circuit, we opened it  in the quantum lab and wrote the necessary code to run the quantum circuit and get the required 1024 shots. We chose to work with 3 quibits because we wanted the quantum data to guide the RGB color values of our particles.  </p>
 <h2>Using quantum computing to create art</h2> 
-<p>The RGB Ramp in Touch Designer has 5 columns: Position, R, G, B, and alpha. However, due to different formatting, the quantum array couldn’t be used directly in Touch Designer. To remedy this, we sorted each shot into a row, and each quibit determined the R,G or B value columns which generated a table of colors. Since the values of the RGB columns are entangled, it creates a limited color palette. The particles that aren’t of the original colors are a demonstration of noise, or quantum computation errors. 
-</p>       
 <div>
     <video class="one" poster="./Images/mab/placeholder.png" controls>
         <source src="./Images/mab/MABMicroscopic.mov" type="video/mp4">
       Your browser does not support the video tag.
     </video>
+</div>
+<p>The RGB Ramp in Touch Designer has 5 columns: Position, R, G, B, and alpha. However, due to different formatting, the quantum array couldn’t be used directly in Touch Designer. To remedy this, we sorted each shot into a row, and each quibit determined the R,G or B value columns which generated a table of colors. Since the values of the RGB columns are entangled, it creates a limited color palette. The particles that aren’t of the original colors are a demonstration of noise, or quantum computation errors. 
+</p> 
+      <!-- Add more content here to see the scrolling effect -->
+    </div>
+    <div class="fixed-section">
+      <p>Fixed Content Goes Here</p>
+      <p style="font-weight: bold;">A collaboration with Isabella Wang, Youn Hwang, Kalinda Panholzer and Si Ran Pang</p>
+            <p style="font-weight: bold;">Role: Backend developer, quantum computing, connecting to touchdesigner</p>
+            
+      <!-- This content will remain constant -->
+    </div>
 </div>
 
 <script src="project.js"></script>
