@@ -1,0 +1,35 @@
+/* CSS for desktop layout */
+.background-image {
+  background-color: blanchedalmond;
+}
+.project-container {
+  display: flex;
+}
+
+.left-section {
+  flex: 0 0 300px; /* Fixed width for left section */
+  height: 100vh; /* Full height */
+  background-color: #f0f0f0; /* Example background color */
+}
+
+.right-section {
+  flex: 1; /* Flexible width for right section */
+  overflow-y: auto; /* Enable vertical scrolling */
+  height: 100vh; /* Full height */
+  background-color: #ffffff; /* Example background color */
+  font-size: 27px;
+}
+
+/* CSS for mobile layout */
+@media screen and (max-width: 767px) {
+  .project-container {
+    flex-direction: column; /* Stack sections vertically */
+  }
+
+  .left-section,
+  .right-section {
+    flex: none; /* Reset flex to default behavior */
+    width: 100%; /* Full width */
+    height: auto; /* Auto height */
+  }
+}

@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Paridhi's Portfolio</title>
     <link rel="icon" type="image/x-icon" href="/images/cursor.png" />
-    <link rel="stylesheet" type="text/css" href="./stylenav.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="./stylenav.css" /> -->
+    <link rel="stylesheet" type="text/css" href="./navigation.css" />
     <link rel="stylesheet" type="text/css" href="./styleindex.css" />
     <link
       rel="stylesheet"
@@ -15,30 +16,63 @@
 
   <body>
     <header>
-      <div class="homepage-container">
-        <nav class="topnav" id="myTopnav">
+      <!-- <nav class="topnav" id="myTopnav">
+        <a href="./index.html" class="logo">★</a>
+        <div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+          <a href="./projects.html">Projects</a>
+          <a href="./play.html">Play</a>
+          <a href="./resume.html">Resume</a>
+          <a href="./about.html">About</a>
+        </div>
+      </nav> -->
+
+      <!-- <nav role="navigation">
+        <div class="navigation-container">
           <a href="./index.html" class="logo">★</a>
-          <div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <i class="fa fa-bars"></i>
-            </a>
-            <a href="./projects.html">Projects</a>
-            <a href="./play.html">Play</a>
-            <a href="./resume.html">Resume</a>
-            <a href="./about.html">About</a>
+          <div id="menuToggle">
+            <input type="checkbox" />
+            <div id="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <ul id="menu">
+              <li><a href="./projects.html">Projects</a></li>
+              <li><a href="./play.html">Play</a></li>
+              <li><a href="./resume.html">Resume</a></li>
+              <li><a href="./about.html">About</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav> -->
+      <div class="navigation-container">
+        <nav role="navigation">
+          <a href="./index.html" class="logo">★</a>
+          <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <ul id="menu">
+              <a href="./projects.html"><li>Projects</li></a>
+              <!-- <a href="./play.html"><li>Play</li></a> -->
+              <a href="./resume.html"><li>Resume</li></a>
+              <a href="./about.html"><li>About</li></a>
+            </ul>
           </div>
         </nav>
+      </div>
     </header>
 
-      <div class="container homepage-img">
-        <img src="./Images/homepage.gif" />
-      </div>
-      <div class="full-cover">
-        <div class="container-graphics">
-        </div>
-      </div>
-  
-      <!-- <div id="projects-section">
+    <div class="container homepage-img">
+      <img src="./Images/homepage.gif" />
+    </div>
+
+    <!-- <div id="projects-section">
 
         <div class="container">
           <a id="hover one" href="./moveabit.html">

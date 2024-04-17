@@ -4,6 +4,18 @@
   font-weight: 100;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+
+  /* make it look decent enough */
+  background: #232323;
+  color: #cdcdcd;
+  font-family: "main font", sans-serif;
+
+  overflow-x: hidden; /* needed because hiding the menu on the right side is not perfect,  */
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -13,18 +25,25 @@ nav {
 }
 
 nav div {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  background-color: #0a0a0b;
   list-style-type: none;
   margin: 0;
-  /* padding: 10px; */
+  padding: 10px;
   width: 100%;
   display: flex;
   justify-content: right;
+  box-sizing: border-box;
 }
 
 nav div a {
   padding: 0;
   margin: 15px;
   font-family: "main font";
+  transition: color 0.3s ease;
   /* margin-left: 20px;
     padding: 10px; */
 }
@@ -35,6 +54,13 @@ nav a:hover {
 
 .nav .icon {
   display: none;
+}
+
+.logo {
+  position: fixed;
+  z-index: 10;
+  top: 10;
+  left: 10;
 }
 
 .topnav {

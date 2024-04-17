@@ -22,10 +22,10 @@
   font-weight: 100;
 }
 
-* {
+/* * {
   border: 0.5px solid blue;
   box-sizing: border-box;
-}
+} */
 
 .module {
   cursor: url("./Images/cursor.png"), auto;

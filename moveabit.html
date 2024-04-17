@@ -1,38 +1,90 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./stylenav.css" />
-    <link rel="stylesheet" type="text/css" href="./styleprojectpage.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./navigation.css" />
+    <link rel="stylesheet" type="text/css" href="./styleprojectpage.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Move A Bit</title>
-</head>
-<body>
-    <nav class="topnav" id="myTopnav">
+  </head>
+  <body>
+    <div class="navigation-container">
+      <nav role="navigation">
         <a href="./index.html" class="logo">★</a>
-        <div>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-          </a>
-          <a href="./play.html">Play</a>
-          <a href="./resume.html">Resume</a>
-          <a href="./about.html">About</a>
+        <div id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <ul id="menu">
+            <a href="./projects.html"><li>Projects</li></a>
+            <a href="./play.html"><li>Play</li></a>
+            <a href="./resume.html"><li>Resume</li></a>
+            <a href="./about.html"><li>About</li></a>
+          </ul>
         </div>
       </nav>
+    </div>
 
-<div class="image-flex-container">
-    <img class="one" src="./Images/projects/MoveABit.png">
-</div>
+    <div class="image-flex-container">
+      <img class="one" src="./Images/projects/MoveABit.png" />
+    </div>
 
-<br>
-<h1>Move A Bit</h1>
-<div class="topics">
-    <h2 style="color:#cee4eb">Quantum Computing</h2>
-    <h2 style="color:#a0ddf2">Entanglement</h2>
-    <h2 style="color:#58a5bf">Realtime Motion Reactivity </h2>
-</div>
-<div class="wrap-text">
+    <br />
+    <div class="topics">
+      <h2 style="color: #cee4eb">Quantum Computing</h2>
+      <h2 style="color: #a0ddf2">Entanglement</h2>
+      <h2 style="color: #58a5bf">Realtime Motion Reactivity</h2>
+    </div>
+    <div class="project-container">
+      <div class="left-section">
+        <!-- Content for the left section -->
+        <h1>Move A Bit</h1>
+        <p>
+          A collaboration with Isabella Wang, Youn Hwang, Kalinda Panholzer and
+          Si Ran Pang
+        </p>
+        <p>
+          Role: Backend Developer, Quantum Computing, Connecting to
+          Touchdesigner
+        </p>
+      </div>
+
+      <div class="right-section">
+        <!-- Content for the right section -->
+        <h2>Introduction</h2>
+        <p>
+          Move A Bit is a live motion capture project created during the Quantum
+          Design Jam at The New School with IBM. The project brings the concepts
+          of quantum computing to life through a fun and interactive experience.
+          It visually showcases the concept of entanglement through the
+          interaction of the viewer with the system. Just as a special
+          correlation exists between qubits, the particles in Move a Bit have a
+          special relationship with the subject in motion. Quibit is the basic
+          unit in quantum computing into which quantum information is stored/
+          encoded. In this project, movement produces the quantum state with all
+          quantum possibilities represented in different colors. Stillness
+          represents the observed collapsed, classical state.We are entangled
+          with the system.
+        </p>
+        <p>
+          This project was exhibited at the Microscope Gallery for the Quantum
+          Art Exhibition in March 2023.
+        </p>
+        <br />
+        <h2>Generating quantum data</h2>
+        <div class="image-flex-container">
+          <img class="one" src="./Images/mab/data.png" />
+        </div>
+        <!-- You can add more content here -->
+      </div>
+    </div>
+    <!-- <div class="wrap-text">
     <div class="row">
         <div class="column">
         </div>
@@ -60,17 +112,17 @@
 </div>
 <p>The RGB Ramp in Touch Designer has 5 columns: Position, R, G, B, and alpha. However, due to different formatting, the quantum array couldn’t be used directly in Touch Designer. To remedy this, we sorted each shot into a row, and each quibit determined the R,G or B value columns which generated a table of colors. Since the values of the RGB columns are entangled, it creates a limited color palette. The particles that aren’t of the original colors are a demonstration of noise, or quantum computation errors. 
 </p> 
-      <!-- Add more content here to see the scrolling effect -->
-    </div>
+     Add more content here to see the scrolling effect -->
+    <!-- </div>
     <div class="fixed-section">
       <p>Fixed Content Goes Here</p>
       <p style="font-weight: bold;">A collaboration with Isabella Wang, Youn Hwang, Kalinda Panholzer and Si Ran Pang</p>
             <p style="font-weight: bold;">Role: Backend developer, quantum computing, connecting to touchdesigner</p>
-            
-      <!-- This content will remain constant -->
-    </div>
-</div>
+             -->
+    <!-- This content will remain constant -->
+    <!-- </div>
+</div>  -->
 
-<script src="project.js"></script>
-</body>
+    <script src="project.js"></script>
+  </body>
 </html>

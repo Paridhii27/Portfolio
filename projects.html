@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Paridhi's Portfolio</title>
     <link rel="icon" type="image/x-icon" href="/images/cursor.png" />
-    <link rel="stylesheet" type="text/css" href="./stylenav.css" />
+    <link rel="stylesheet" type="text/css" href="./navigation.css" />
     <link rel="stylesheet" type="text/css" href="./styleprojects.css" />
     <link
       rel="stylesheet"
@@ -14,18 +14,24 @@
   </head>
 
   <body>
-        <nav class="topnav" id="myTopnav">
-          <a href="./index.html" class="logo">★</a>
-          <div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <i class="fa fa-bars"></i>
-            </a>
-            <a href="./projects.html">Projects</a>
-            <a href="./play.html">Play</a>
-            <a href="./resume.html">Resume</a>
-            <a href="./about.html">About</a>
-          </div>
-        </nav>
+    <div class="navigation-container">
+      <nav role="navigation">
+        <a href="./index.html" class="logo">★</a>
+        <div id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <ul id="menu">
+            <a href="./projects.html"><li>Projects</li></a>
+            <!-- <a href="./play.html"><li>Play</li></a> -->
+            <a href="./resume.html"><li>Resume</li></a>
+            <a href="./about.html"><li>About</li></a>
+          </ul>
+        </div>
+      </nav>
+    </div>
   
       <div id="projects-section">
 
