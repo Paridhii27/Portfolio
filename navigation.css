@@ -78,9 +78,7 @@ nav {
 
   #menu li:hover {
     background-image: linear-gradient(
-      to right,
-      #5b5286,
-      #d8d2ed,
+      to left,
       #62b1c3,
       #c1e5e8
     ); /* Change gradient colors on hover */

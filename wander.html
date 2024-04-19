@@ -3,7 +3,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="./stylenav.css" />
+    <link rel="stylesheet" type="text/css" href="./navigation.css" />
     <link rel="stylesheet" type="text/css" href="./styleprojectpage.css" />
     <link
       rel="stylesheet"
@@ -11,18 +11,26 @@
     />
     <title>Wonder, Wander, Repeat</title>
   </head>
-  <body>
-    <nav class="topnav" id="myTopnav">
-      <a href="./index.html" class="logo">★</a>
-      <div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-        <a href="./play.html">Play</a>
-        <a href="./resume.html">Resume</a>
-        <a href="./about.html">About</a>
-      </div>
-    </nav>
+  <body></body>
+
+    <div class="navigation-container">
+      <nav role="navigation">
+        <a href="./index.html" class="logo">★</a>
+        <div id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <ul id="menu">
+            <a href="./projects.html"><li>Projects</li></a>
+            <!-- <a href="./play.html"><li>Play</li></a> -->
+            <a href="./resume.html"><li>Resume</li></a>
+            <a href="./about.html"><li>About</li></a>
+          </ul>
+        </div>
+      </nav>
+    </div>
 
     <div class="img-flex-container">
       <img class="one" src="./Images/wander/wander.png" />

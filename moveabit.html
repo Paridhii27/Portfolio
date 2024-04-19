@@ -23,7 +23,7 @@
 
           <ul id="menu">
             <a href="./projects.html"><li>Projects</li></a>
-            <a href="./play.html"><li>Play</li></a>
+            <!-- <a href="./play.html"><li>Play</li></a> -->
             <a href="./resume.html"><li>Resume</li></a>
             <a href="./about.html"><li>About</li></a>
           </ul>
@@ -81,6 +81,52 @@
         <div class="image-flex-container">
           <img class="one" src="./Images/mab/data.png" />
         </div>
+        <p>
+          To generate the quantum data to guide the properties of our motion
+          reactive particles, we used the W-state to entangle three quibits.
+          W-state is a means of entangling 3 quibits robustly especially when a
+          quibit is lost. The quantum circuit was composed of reset, RY, CU and
+          controlled-x gates. The circuit also had three measurement info or
+          z-basis at the end to measure the quibit values in the classical
+          register. We chose to work with 3 quibits because we wanted the
+          quantum data to guide the RGB color values of our particles.
+        </p>
+        <h2>Particle System</h2>
+        <p>
+          The quantum data was then put into touchdesigner: a node based visual
+          programming language for real-time interactive content. The data had
+          to first be formatted so that it could be put into the RGB ramp in
+          touchdesigner to control the colour of the quantum particles. Since
+          the values of the RGB columns were entangled, it created a limited
+          color palette. The particles that aren’t of the original colors are a
+          demonstration of noise, or quantum computation errors. Essentially as
+          you move, the particles of the quantum system move with you. The
+          project only exists in correlation to the viewer.
+        </p>
+        <h2>Exhibition</h2>
+        <div style="padding: 56.25% 0 0 0; position: relative">
+          <iframe
+            src="https://player.vimeo.com/video/936433715?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+            style="
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+            "
+            title="Move A Bit: An interactive installation"
+          ></iframe>
+        </div>
+        <script src="https://player.vimeo.com/api/player.js"></script>
+        <p>
+          Exhibited at the Microscope Gallery for the Quantum Art Exhibition.
+        </p>
+        <p>
+          This project would not have been possible without the guidance of
+          professionals at IBM Quantum and the New School Innovation Center.
+        </p>
         <!-- You can add more content here -->
       </div>
     </div>

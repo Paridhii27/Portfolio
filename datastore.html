@@ -1,64 +1,68 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./stylenav.css" />
-    <link rel="stylesheet" type="text/css" href="./styleprojectpage.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./navigation.css" />
+    <link rel="stylesheet" type="text/css" href="./styleprojectpage.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Computerized Memories</title>
-</head>
-<body>
-    <nav class="topnav" id="myTopnav">
+  </head>
+  <body>
+    <div class="navigation-container">
+      <nav role="navigation">
         <a href="./index.html" class="logo">★</a>
-        <div>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-          </a>
-          <a href="./play.html">Play</a>
-          <a href="./resume.html">Resume</a>
-          <a href="./about.html">About</a>
+        <div id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <ul id="menu">
+            <a href="./projects.html"><li>Projects</li></a>
+            <!-- <a href="./play.html"><li>Play</li></a> -->
+            <a href="./resume.html"><li>Resume</li></a>
+            <a href="./about.html"><li>About</li></a>
+          </ul>
         </div>
       </nav>
+    </div>
 
     <div class="image-flex-container">
-        <img class="one" src="./Images/datastore/slide1.png">
+      <img class="one" src="./Images/datastore/slide1.png" />
     </div>
     <h1>Warped memories of digital ghosts</h1>
-    <div class="topics" style="border-color: aliceblue;">
-        <h2 style="color:#BF868F">Blender rendering</h2>
-        <h2 style="color:#7679A5">Data transparency</h2>
-        <h2 style="color:#B6B59A">Memories</h2>
+    <div class="topics" style="border-color: aliceblue">
+      <h2 style="color: #bf868f">Blender rendering</h2>
+      <h2 style="color: #7679a5">Data transparency</h2>
+      <h2 style="color: #b6b59a">Memories</h2>
     </div>
     <h2>Welcome to the data store</h2>
     <p>
-        Your imagination keeping you awake<br>
-        in the middle of the night<br>
-        Is it fantasy or is it just blatant lies<br>
-        Does imagination ever turn into reality <br>
-        Is there some truth always hidden in fantasy? <br>
-        Do you ever feel like you’re floating away from real life? <br>
-        Does it feel dreamy or scary at times ? <br>
+      Your imagination keeping you awake<br />
+      in the middle of the night<br />
+      Is it fantasy or is it just blatant lies<br />
+      Does imagination ever turn into reality <br />
+      Is there some truth always hidden in fantasy? <br />
+      Do you ever feel like you’re floating away from real life? <br />
+      Does it feel dreamy or scary at times ? <br />
     </p>
     <div class="image-flex-container">
-        
-        <img class="two" src="./Images/datastore/slide7.png">
-        <img class="two" src="./Images/datastore/slide8.png">
-
+      <img class="two" src="./Images/datastore/slide7.png" />
+      <img class="two" src="./Images/datastore/slide8.png" />
     </div>
     <div class="image-flex-container">
-        
-        <img class="two" src="./Images/datastore/slide9.png">
-        <img class="two" src="./Images/datastore/slide10.png">
-
+      <img class="two" src="./Images/datastore/slide9.png" />
+      <img class="two" src="./Images/datastore/slide10.png" />
     </div>
 
     <div class="image-flex-container">
-        
-        <img class="two" src="./Images/datastore/datastore3.png">
-        <img class="two" src="./Images/datastore/cookies.png">
-
+      <img class="two" src="./Images/datastore/datastore3.png" />
+      <img class="two" src="./Images/datastore/cookies.png" />
     </div>
     <script src="project.js"></script>
-</body>
+  </body>
 </html>
