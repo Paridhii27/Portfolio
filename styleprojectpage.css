@@ -314,3 +314,7 @@ div.scroll-container img {
     height: auto; /* Adjust container height to fit content */
   }
 }
+
+#twine-link:hover {
+  color: rgb(226, 201, 164);
+}
