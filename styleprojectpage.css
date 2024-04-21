@@ -30,10 +30,19 @@ body {
 
 h1 {
   font-family: "Pangram heading", serif;
+  letter-spacing: 0.15cm;
   margin: 4% 4%;
   color: black;
   font-size: 36px;
-  text-shadow: -1px 1px 0 #ffffff, 2px 1px 0 #ffffff, 1px -1px 0 #ffffff;
+  text-shadow: -1px 1px 0 #ffffff, 2px 1px 0 #ffffff, 0.6px -0.6px 0 #ffffff;
+}
+
+h1:hover {
+  font-family: "Pangram heading", serif;
+  margin: 4% 4%;
+  color: rgb(251, 249, 249);
+  opacity: 90%;
+  font-size: 36px;
 }
 
 h2 {
@@ -64,6 +73,19 @@ a {
   font-size: 24px;
   text-decoration: none;
   margin: 5% 5%;
+  justify-content: right;
+}
+
+img {
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+.process-img {
+  height: 20%;
+  width: auto;
 }
 
 /* CSS for desktop layout */
@@ -77,6 +99,8 @@ a {
 .left-section {
   flex: 0 0 300px; /* Fixed width for left section */
   height: 100vh; /* Full height */
+  font-size: 27px;
+  padding: 5%;
   /* padding-left: 2%; */
   /*background-color: #f0f0f0;  Example background color */
 }
@@ -92,6 +116,9 @@ a {
 
 /* CSS for mobile layout */
 @media screen and (max-width: 767px) {
+  body {
+    padding: 5%;
+  }
   .project-container {
     flex-direction: column; /* Stack sections vertically */
   }
@@ -213,7 +240,7 @@ a {
   }
 
   p {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .dot {
@@ -274,25 +301,6 @@ div.scroll-container img {
   line-height: 2;
   letter-spacing: 0.01cm;
   padding: 0;
-}
-
-body,
-html {
-  height: 100%;
-}
-.container {
-  display: flex;
-  flex-wrap: wrap; /* Allow the children to wrap as needed */
-  height: 100vh; /* Full height of the viewport */
-}
-.scrollable-section,
-.fixed-section {
-  flex: 1 1 50%; /* Default to half-width */
-  padding: 20px;
-  box-sizing: border-box; /* Include padding and border in the element's width and height */
-}
-.scrollable-section {
-  overflow-y: auto; /* Enable scrolling only if needed */
 }
 
 /* Responsive Design */

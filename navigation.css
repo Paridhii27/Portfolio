@@ -4,11 +4,14 @@
   font-weight: 100;
 }
 
+/* * {
+  border: 0.5px solid blue;
+  box-sizing: border-box;
+} */
+
 body {
   margin: 0;
   padding: 0;
-
-  /* make it look decent enough */
   background: #232323;
   color: #cdcdcd;
   font-family: "main font", sans-serif !important;
@@ -22,11 +25,13 @@ nav {
   flex-direction: row;
 }
 
-/* .navigation-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-} */
+.navigation-container {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999; /* Ensure the navigation bar appears above other content */
+}
 
 .logo {
   font-size: 26px;
@@ -38,8 +43,18 @@ nav {
 
 #menu {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
 }
 
+#menuToggle {
+  position: calc(width);
+  display: flex;
+  padding-left: 2vw;
+  padding-right: 3vw;
+  margin-left: auto;
+}
 #menuToggle input {
   display: none;
 }
@@ -48,7 +63,7 @@ nav {
   display: none; /* Hide menu toggle by default */
 }
 
-@media screen and (min-width: 901px) {
+@media screen and (min-width: 899px) {
   nav a {
     display: flex;
     flex-direction: column;
@@ -56,27 +71,24 @@ nav {
     align-items: center;
     margin-right: 5%;
   }
-  .navigation-container {
-    /* background-color: #5b5286; */
-    display: inline;
-    align-items: center;
-  }
 
   #menu {
     display: flex;
-    justify-content: space-between;
     order: 1;
     padding-top: 3%;
   }
 
   #menuToggle {
-    display: flex;
-    margin-left: 50vw;
-    align-items: center;
-    margin-right: 20px;
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 45px;
+
+    z-index: 1;
   }
 
   #menu li:hover {
+    text-decoration: underline;
     background-image: linear-gradient(
       to left,
       #62b1c3,
@@ -98,15 +110,13 @@ nav {
     /* make it look decent enough */
     background: #232323;
     color: #cdcdcd;
-    font-family: "Avenir Next", "Avenir", sans-serif;
-
+    font-family: "main font", sans-serif;
     overflow-x: hidden; /* needed because hiding the menu on the right side is not perfect,  */
   }
 
   a {
-    text-decoration: none;
+    /* text-decoration: none; */
     color: #232323;
-
     transition: color 0.3s ease;
   }
 
@@ -188,20 +198,17 @@ nav {
     transform: rotate(-45deg) translate(0, -1px);
   }
 
-  /*
- * Make this absolute positioned
- * at the top left of the screen
- */
   #menu {
     position: absolute;
-    width: 300px;
+    width: 40vw;
+    height: 100vh;
     margin: -50px 0 0 0;
     padding: 50px;
     padding-top: 150px;
     padding-bottom: 270px;
-    right: -100px;
+    right: -90px;
 
-    background: #060606;
+    background: #000000;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     /* to stop flickering of text in safari */
@@ -222,10 +229,8 @@ nav {
   #menu li:hover {
     background-image: linear-gradient(
       to right,
-      #25107a,
-      #bfb9c8,
-      #62b1c3,
-      #5b5286,
+      #e7e1ef,
+      #b4dbe4,
       #36d1dc
     ); /* Change gradient colors on hover */
     -webkit-background-clip: text; /* Apply background-clip to text */

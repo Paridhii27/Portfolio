@@ -27,14 +27,13 @@
   box-sizing: border-box;
 } */
 body {
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
   background-color: black;
   height: fit-content;
   color: white;
-  /* display: block; */
   box-sizing: border-box;
-  font-family: "new font", serif;
+  font-family: "main font", serif;
 }
 
 a {
@@ -49,6 +48,15 @@ a:hover {
   color: #bad7e0;
 }
 
+#menuToggle {
+  display: block;
+  position: absolute;
+  top: 40px;
+  right: 10vw;
+  font-size: 25px;
+  z-index: 1;
+}
+
 p {
   font-family: "Pangram content", serif;
   color: white;
@@ -61,12 +69,13 @@ img {
   width: 90%;
   max-width: 100%;
   overflow: hidden;
-  height: 300px;
+  height: 320px;
   border-radius: 10px;
   margin-top: 5%;
   margin-bottom: 15%;
   transition: transform 0.2s;
-  border: 0.4px solid #fff;
+  border: 0.01px solid #edeeec;
+  overflow: hidden;
 }
 
 img:hover {
@@ -79,7 +88,7 @@ img:hover {
 #projects-section {
   height: fit-content;
   width: fit-content;
-  margin-top: 5vh;
+  margin: 4vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -90,7 +99,7 @@ img:hover {
   /* width: calc(50% - 10px); */
   width: 40vw;
   text-align: left;
-  padding: 5%;
+  padding: 2%;
 }
 
 #projects-section .container:last-child {
@@ -101,20 +110,21 @@ img:hover {
   white-space: nowrap;
 }
 
-/* @media screen and (max-width: 750px) {
+@media screen and (max-width: 750px) {
   .column {
     width: 100%;
   }
   #projects-section {
     display: block;
   }
+
   a {
     font-size: 20px;
   }
   p {
     font-size: 17px;
   }
-} */
+}
 
 /* Responsive adjustments */
 @media (max-width: 950px) {
