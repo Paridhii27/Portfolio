@@ -13,7 +13,7 @@
 
 @font-face {
   font-family: "Pangram content";
-  src: url("/assets/PPEditorialOld-Ultralight.otf") format("opentype");
+  src: url("/assets/PPEiko-Thin.otf") format("opentype");
   font-weight: 100;
 }
 
@@ -60,7 +60,7 @@ h3 {
 }
 
 p {
-  font-family: "Pangram trial", serif;
+  font-family: "Pangram content", serif;
   color: white;
   font-size: 18px;
   margin-left: 4%;
