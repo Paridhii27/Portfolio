@@ -1,0 +1,213 @@
+@font-face {
+  font-family: "main font";
+  src: url("/assets/veteran_typewriter.ttf") format("truetype");
+  font-weight: 100;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #cdcdcd;
+  font-family: "main font", sans-serif;
+  overflow-x: hidden;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+nav a {
+  color: #cdcdcd;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  margin-bottom: 10px; /* Add margin between menu items */
+  font-size: 18px;
+  text-decoration: none;
+  z-index: 100;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: tomato;
+}
+
+.logo {
+  color: #cdcdcd;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+#menuToggle {
+  display: none; /* Hide menu toggle by default */
+}
+
+#menuToggle input {
+  display: none; /* Hide checkbox input by default */
+}
+
+#hamburger {
+  display: none; /* Hide hamburger icon by default */
+}
+
+#menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: -10px; /* Adjust margin to account for padding */
+}
+
+#menu li {
+  list-style: none; /* Remove default list styles */
+}
+
+/* #menu a {
+  color: #cdcdcd;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  margin-bottom: 10px; /* Add margin between menu items
+  font-size: 18px;
+} */
+
+/* Media query for smaller screens */
+@media screen and (max-width: 1008px) {
+  .logo {
+    padding-left: 20px; /* Add padding to logo */
+  }
+
+  #menuToggle {
+    display: block; /* Show menu toggle */
+    z-index: 1;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  #menuToggle input {
+    display: block; /* Show checkbox input */
+    width: 40px;
+    height: 32px;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 20;
+    -webkit-touch-callout: none;
+  }
+
+  #hamburger {
+    display: block; /* Show hamburger icon */
+  }
+
+  #menuToggle span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #f3f2f2;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  }
+
+  #menuToggle span:first-child {
+    transform-origin: 0% 0%;
+    z-index: 999;
+  }
+
+  #menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
+
+  #menu {
+    display: none; /* Hide menu on small screens */
+  }
+
+  #menu a {
+    color: #cdcdcd;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    margin-bottom: 10px; /* Add margin between menu items */
+    font-size: 18px;
+  }
+  #menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+  }
+
+  /*
+ * But let's hide the middle one.
+ */
+  #menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  /*
+ * Ohyeah and the last one should go the other direction
+ */
+  #menuToggle input:checked ~ span:nth-last-child(2) {
+    opacity: 1;
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+
+  #menu {
+    display: flex; /* Display menu when toggle is checked */
+    flex-direction: column;
+    background: #ededed;
+    /* position: absolute; */
+    top: 60px;
+    right: 20px;
+    padding: 20px;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+  #menu li {
+    padding: 10px 0;
+    font-size: 22px;
+  }
+
+  #menuToggle input:checked ~ ul {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+/* Media query for larger screens */
+@media screen and (min-width: 769px) {
+  #menuToggle {
+    display: none; /* Hide menu toggle on larger screens */
+  }
+
+  #hamburger {
+    display: none; /* Hide hamburger icon on larger screens */
+  }
+
+  #menu {
+    display: flex; /* Display menu items as inline on larger screens */
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  #menu a {
+    color: #cdcdcd;
+    text-decoration: none;
+    margin-left: 20px; /* Adjust margin between menu items */
+  }
+}

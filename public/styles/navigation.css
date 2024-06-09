@@ -1,0 +1,250 @@
+@font-face {
+  font-family: "main font";
+  src: url("/assets/veteran_typewriter.ttf") format("truetype");
+  font-weight: 100;
+}
+
+/* * {
+  border: 0.5px solid blue;
+  box-sizing: border-box;
+} */
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #232323;
+  color: #cdcdcd;
+  font-family: "main font", sans-serif !important;
+  font-size: 25px !important;
+
+  overflow-x: hidden; /* needed because hiding the menu on the right side is not perfect,  */
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.navigation-container {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999; /* Ensure the navigation bar appears above other content */
+}
+
+.logo {
+  font-size: 26px;
+}
+
+.logo:hover {
+  color: yellow;
+}
+
+#menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+#menuToggle {
+  position: calc(width);
+  display: flex;
+  padding-left: 2vw;
+  padding-right: 3vw;
+  margin-left: auto;
+}
+#menuToggle input {
+  display: none;
+}
+
+#menuToggle span {
+  display: none; /* Hide menu toggle by default */
+}
+
+@media screen and (min-width: 899px) {
+  nav a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 5%;
+  }
+
+  #menu {
+    display: flex;
+    order: 1;
+    padding-top: 3%;
+  }
+
+  #menuToggle {
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 45px;
+
+    z-index: 1;
+  }
+
+  #menu li:hover {
+    text-decoration: underline;
+    background-image: linear-gradient(
+      to left,
+      #62b1c3,
+      #c1e5e8
+    ); /* Change gradient colors on hover */
+    -webkit-background-clip: text; /* Apply background-clip to text */
+    color: transparent; /* Set text color to transparent */
+    transition: background-color 0.2s ease; /* Add transition effect */
+    opacity: 1.5;
+    border: #25107a;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    margin: 0;
+    padding: 0;
+
+    /* make it look decent enough */
+    background: #232323;
+    color: #cdcdcd;
+    font-family: "main font", sans-serif;
+    overflow-x: hidden; /* needed because hiding the menu on the right side is not perfect,  */
+  }
+
+  a {
+    /* text-decoration: none; */
+    color: #232323;
+    transition: color 0.3s ease;
+  }
+
+  a:hover {
+    color: rgb(185, 169, 232);
+  }
+
+  #menuToggle {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 50px;
+
+    z-index: 1;
+
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  #menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+
+    cursor: pointer;
+
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+
+    -webkit-touch-callout: none;
+  }
+
+  /*
+ * Just a quick hamburger
+ */
+  #menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background: #cdcdcd;
+    border-radius: 3px;
+
+    z-index: 1;
+
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  }
+
+  #menuToggle span:first-child {
+    transform-origin: 0% 0%;
+  }
+
+  #menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
+
+  /* hamburger to cross */
+  #menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+  }
+
+  #menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  #menuToggle input:checked ~ span:nth-last-child(2) {
+    opacity: 1;
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+
+  #menu {
+    position: absolute;
+    width: 40vw;
+    height: 100vh;
+    margin: -50px 0 0 0;
+    padding: 50px;
+    padding-top: 150px;
+    padding-bottom: 270px;
+    right: -90px;
+
+    background: #000000;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+
+  #menu li {
+    margin: 2%;
+    padding: 10px 0;
+    text-align: center;
+    line-height: 2;
+  }
+
+  #menu li:hover {
+    background-image: linear-gradient(
+      to right,
+      #e7e1ef,
+      #b4dbe4,
+      #36d1dc
+    ); /* Change gradient colors on hover */
+    -webkit-background-clip: text; /* Apply background-clip to text */
+    color: transparent; /* Set text color to transparent */
+    transition: background-color 0.2s ease; /* Add transition effect */
+    opacity: 1.5;
+    border: #25107a;
+  }
+
+  /*
+ * And let's fade it in from the left
+ */
+  #menuToggle input:checked ~ ul {
+    transform: none;
+    opacity: 1;
+  }
+}

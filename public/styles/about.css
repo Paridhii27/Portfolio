@@ -1,0 +1,254 @@
+@font-face {
+  font-family: "Pangram Pangram";
+  src: url("/assets/PPRightSans-Medium.otf") format("opentype");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "main font";
+  src: url("/assets/veteran_typewriter.ttf") format("truetype");
+  font-weight: 100;
+}
+/* * {
+  border: 0.5px solid blue;
+} */
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: black;
+  color: white;
+  display: block;
+  box-sizing: border-box;
+  font-family: "main font", serif;
+  cursor: url("Images/pointer.png"), auto;
+}
+
+h1 {
+  margin-top: 5%;
+}
+
+p {
+  color: white;
+  font-size: 22px;
+  line-height: 2;
+  margin: 5vw 2vw 6vw 6vw;
+}
+
+a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  margin: 5% 5%;
+}
+
+img {
+  opacity: 0.9;
+  border-radius: 2%;
+}
+
+.content {
+  margin-left: 25px;
+}
+
+.image-flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-flex-container img {
+  opacity: 1;
+  object-fit: contain;
+}
+
+.one {
+  width: 100%;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  margin: 5%;
+}
+
+.column {
+  -ms-flex: 25%;
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+  margin-left: 5%;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Resume download button */
+.btn {
+  /* background-color: black; */
+  background: linear-gradient(60deg, #f787b6, #f1c964);
+  opacity: 85%;
+  border: 1%;
+  border-radius: 10px;
+  color: white;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 24px;
+  font-family: "main font";
+  margin-left: 5%;
+  margin-bottom: 2%;
+}
+
+.btn:hover {
+  background: linear-gradient(60deg, #c8aff0, #2b50e5);
+  color: #fff;
+  transition: background-color 0.5s ease;
+}
+
+.intro-text {
+  flex: 1; /* Take up remaining space in flex container */
+  text-align: justify;
+  padding: 2%;
+}
+
+.intro-text p {
+  font-size: 20px;
+}
+
+.links-grid {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.links-grid a {
+  font-size: 20px;
+}
+
+.footer-link {
+  color: white; /* Set text color to transparent */
+  transition: background-color 0.3s; /* Add transition effect */
+  text-decoration: none; /* No underline on links */
+  display: flex;
+  flex-direction: row; /* Ensure logo and text are side by side */
+}
+
+.footer-link img.logo {
+  width: 24px; /* Logo size */
+  height: auto;
+  margin-right: 8px; /* Space between logo and text */
+}
+
+#email:hover {
+  text-decoration: underline; /* Underline link on hover */
+  background-image: linear-gradient(
+    to right,
+    #dc3636,
+    #eec7c7,
+    #b62020
+  ); /* Change gradient colors on hover */
+  -webkit-background-clip: text; /* Apply background-clip to text */
+  color: transparent; /* Set text color to transparent */
+  transition: background-color 0.3s; /* Add transition effect */
+}
+
+#instagram:hover {
+  text-decoration: underline; /* Underline link on hover */
+  background-image: linear-gradient(
+    to right,
+    #dcbe36,
+    #e5a95b,
+    #e57c36,
+    #a21f6c,
+    #dc36d1
+  ); /* Change gradient colors on hover */
+  -webkit-background-clip: text; /* Apply background-clip to text */
+  color: transparent; /* Set text color to transparent */
+  transition: background-color 0.3s; /* Add transition effect */
+}
+
+#linkedin:hover {
+  text-decoration: underline; /* Underline link on hover */
+  background-image: linear-gradient(
+    to right,
+    #36d1dc,
+    #5b86e5,
+    #6193e9,
+    #2b3cbf,
+    #367edc
+  ); /* Change gradient colors on hover */
+  -webkit-background-clip: text; /* Apply background-clip to text */
+  color: transparent; /* Set text color to transparent */
+  transition: background-color 0.3s; /* Add transition effect */
+}
+
+#github:hover {
+  text-decoration: underline; /* Underline link on hover */
+  background-image: linear-gradient(
+    to right,
+    #36d1dc,
+    #5b86e5,
+    #7d36e5,
+    #ad3de5,
+    #4423db
+  ); /* Change gradient colors on hover */
+  -webkit-background-clip: text; /* Apply background-clip to text */
+  color: transparent; /* Set text color to transparent */
+  transition: background-color 0.3s; /* Add transition effect */
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Allow the links to wrap on smaller screens */
+  gap: 10px; /* Spacing between each link */
+}
+
+.link-item img.logo {
+  width: 24px;
+  height: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .intro-text p {
+    font-size: 16px;
+  }
+
+  .links-grid a {
+    font-size: 18px;
+  }
+
+  .header-container {
+    display: grid;
+    grid-template-columns: 3fr 2fr; /* Adjusted to a 60:40 ratio equivalent */
+    gap: 20px;
+    align-items: start;
+  }
+  .footer-container {
+    flex-direction: column; /* Stack the links vertically on smaller screens */
+  }
+
+  .footer-link {
+    justify-content: center; /* Center-align the logo and text within the link */
+  }
+  .btn {
+    font-size: 18px;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .links-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+  }
+}

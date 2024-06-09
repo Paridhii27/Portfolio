@@ -1,0 +1,143 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="/images/homepage/pointer.png" />
+
+    <link rel="stylesheet" type="text/css" href="../../styles/navigation.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../styles/projectpage.css"
+    />
+
+    <title>Move A Bit</title>
+  </head>
+  <body>
+    <div class="navigation-container">
+      <nav role="navigation">
+        <a href="../index.html" class="logo">★</a>
+        <div id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <ul id="menu">
+            <a href="../projects.html"><li>Projects</li></a>
+            <a href="../resume.html"><li>Resume</li></a>
+            <a href="../about.html"><li>About</li></a>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="image-flex-container">
+      <img class="one" src="/Images/project-pages/thumbnails/MoveABit.png" />
+    </div>
+
+    <br />
+    <div class="topics">
+      <h2 style="color: #cee4eb">Quantum Computing</h2>
+      <h2 style="color: #a0ddf2">Entanglement</h2>
+      <h2 style="color: #58a5bf">Realtime Motion Reactivity</h2>
+    </div>
+    <div class="project-container">
+      <div class="left-section">
+        <h1>Move A Bit</h1>
+        <p>
+          Move a Bit is a live motion capture project bringing quantum computing
+          to life through an interactive display that visually showcases
+          entanglement.
+        </p>
+        <p>Quantum Computing | Touchdesigner | 2022</p>
+        <p>
+          Collaborators: Isabella Wang, Youn Hwang, Kalinda Panholzer and Si Ran
+          Pang
+        </p>
+        <p>
+          Role: Concept, Backend Developer, Quantum Computing, Connecting to
+          Touchdesigner, Experience design
+        </p>
+      </div>
+
+      <div class="right-section">
+        <h2>Introduction</h2>
+        <p>
+          This project was created during the Quantum Design Jam at The New
+          School with IBM. The project brings the concepts of quantum computing
+          to life through a fun and interactive experience. It visually
+          showcases the concept of entanglement through the interaction of the
+          viewer with the system. Just as a special correlation exists between
+          qubits, the particles in Move a Bit have a special relationship with
+          the subject in motion. Quibit is the basic unit in quantum computing
+          into which quantum information is stored/ encoded. In this project,
+          movement produces the quantum state with all quantum possibilities
+          represented in different colors. Stillness represents the observed
+          collapsed, classical state.We are entangled with the system.
+        </p>
+        <br />
+        <h2>Generating quantum data</h2>
+        <div class="image-flex-container">
+          <img class="one" src="/Images/project-pages/move-a-bit/data.png" />
+        </div>
+        <img src="/Images/project-pages/move-a-bit/quantumShots.png" />
+        <p>
+          To generate the quantum data to guide the properties of our motion
+          reactive particles, we used the W-state to entangle three quibits.
+          W-state is a means of entangling 3 quibits robustly especially when a
+          quibit is lost. The quantum circuit was composed of reset, RY, CU and
+          controlled-x gates. The circuit also had three measurement info or
+          z-basis at the end to measure the quibit values in the classical
+          register. We chose to work with 3 quibits because we wanted the
+          quantum data to guide the RGB color values of our particles.
+        </p>
+        <h2>Generating particles</h2>
+        <img src="/Images/project-pages/move-a-bit/colorRamp.png" />
+        <p>
+          The quantum data was then put into touchdesigner: a node based visual
+          programming language for real-time interactive content. The data had
+          to first be formatted so that it could be put into the RGB ramp in
+          touchdesigner to control the colour of the quantum particles. Since
+          the values of the RGB columns were entangled, it created a limited
+          color palette. The particles that aren’t of the original colors are a
+          demonstration of noise, or quantum computation errors. Essentially as
+          you move, the particles of the quantum system move with you. The
+          project only exists in correlation to the viewer.
+        </p>
+        <h2>Exhibition</h2>
+        <div style="padding: 56.25% 0 0 0; position: relative">
+          <iframe
+            src="https://player.vimeo.com/video/936433715?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+            style="
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+            "
+            title="Move A Bit: An interactive installation"
+          ></iframe>
+        </div>
+        <script src="https://player.vimeo.com/api/player.js"></script>
+        <p>
+          Exhibited at the Microscope Gallery for the Quantum Art Exhibition
+          organized by IBM Quantum and Parsons School of Design in March 2023.
+        </p>
+        <p>
+          This project would not have been possible without the guidance of
+          professionals at IBM Quantum and the New School Innovation Center.
+        </p>
+      </div>
+    </div>
+
+    <script src="/public/scripts/project.js"></script>
+  </body>
+</html>

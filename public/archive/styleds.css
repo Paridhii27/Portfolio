@@ -1,0 +1,116 @@
+@font-face {
+  font-family: "Pangram Pangram";
+  src: url("/assets/PPRightSans-Medium.otf") format("opentype");
+  font-weight: 100;
+}
+/**{
+    border: 0.5px solid blue;
+  }*/
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: black;
+  height: 100%;
+  color: white;
+  display: block;
+  box-sizing: border-box; /* The box border applies to the inside of the div and not to the outside */
+  font-family: "Pangram Pangram", serif;
+}
+
+h1 {
+  margin-left: 4%;
+  color: #c8bfdb;
+}
+
+h2 {
+  margin-left: 4%;
+}
+
+p {
+  color: white;
+  font-size: 26px;
+  margin-left: 4%;
+}
+
+a {
+  color: white;
+  font-size: 28px;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  /* margin: 20px; */
+}
+
+nav section {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  width: fit-content;
+  display: flex;
+}
+
+nav section a {
+  margin-left: 20px;
+  padding: 10px;
+}
+
+nav a:hover {
+  opacity: 0.7;
+}
+
+.header {
+  padding: 20px;
+}
+
+.logo {
+  font-size: 28px;
+  margin: 2%;
+}
+
+.content {
+  margin-left: 75px;
+}
+
+.image-flex-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.image-flex-container img {
+  object-fit: contain;
+}
+
+.image-flex-container img:hover {
+}
+
+.two {
+  width: 48%;
+}
+
+.one {
+  width: 100%;
+}
+.linearGrid {
+  margin: 50px 20px;
+}
+.linearGrid img {
+  width: 100%;
+  opacity: 0.7;
+}
+
+.linearGrid img:hover {
+  opacity: 1;
+}
+
+.homepage {
+  margin: 50px 50px;
+}
+.homepage img {
+  width: 100%;
+  opacity: 1;
+  margin-bottom: 50px;
+}
