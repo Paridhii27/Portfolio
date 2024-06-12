@@ -1,71 +1,45 @@
-@font-face {
-  font-family: "Pangram heading";
-  src: url("/assets/PPRightSans-Medium.otf") format("opentype");
-  font-weight: 100;
-}
+/* * {
+  border: 0.5px solid blue;
+  box-sizing: border-box;
+} */
 
-@font-face {
-  font-family: "Pangram subheading";
-  /* src: url('/assets/PPEditorialOld-UltralightItalic.otf') format('opentype'); */
-  src: url("/assets/cursive.ttf") format("truetype");
-  font-weight: 100;
-}
-
-@font-face {
-  font-family: "Pangram content";
-  src: url("/assets/PPEiko-Thin.otf") format("opentype");
-  font-weight: 100;
-}
+@import url("https://use.typekit.net/ifl4sqh.css");
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap");
 
 body {
-  max-width: 1200px;
+  max-width: 90vw;
   margin: 0 auto;
   background-color: black;
   height: fit-content;
   color: white;
-  /* display: block; */
-  box-sizing: border-box; /* The box border applies to the inside of the div and not to the outside */
-  font-family: "Pangram heading", serif;
+  box-sizing: border-box;
 }
 
 h1 {
-  font-family: "Pangram heading", serif;
-  letter-spacing: 0.15cm;
-  margin: 4% 4%;
-  color: black;
-  font-size: 36px;
-  text-shadow: -1px 1px 0 #ffffff, 2px 1px 0 #ffffff, 0.6px -0.6px 0 #ffffff;
-}
-
-h1:hover {
-  font-family: "Pangram heading", serif;
-  margin: 4% 4%;
-  color: rgb(251, 249, 249);
-  opacity: 90%;
-  font-size: 36px;
+  font-family: "spirits-neutral", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 1%;
+  color: rgb(255, 254, 254);
+  font-size: 45px;
 }
 
 h2 {
-  font-family: "Pangram heading", serif;
-  font-size: 22px;
+  font-size: 25px;
   color: white;
-  margin-left: 4%;
-}
-
-h3 {
-  font-family: "Pangram subheading", serif;
-  color: white;
-  font-size: 50px;
-  margin-left: 4%;
+  margin-left: 1%;
 }
 
 p {
-  font-family: "Pangram content", serif;
+  font-family: "Instrument Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 250;
+  font-style: normal;
   color: white;
-  font-size: 18px;
-  margin-left: 4%;
-  line-height: 2.5;
-  /* font-family: 'Pangram content', serif; */
+  font-size: 16px;
+  margin-left: 1%;
+  line-height: 1.7;
+  text-align: justify;
 }
 
 a {
@@ -88,7 +62,6 @@ img {
   width: auto;
 }
 
-/* CSS for desktop layout */
 .background-image {
   background-color: blanchedalmond;
 }
@@ -97,41 +70,22 @@ img {
 }
 
 .left-section {
-  flex: 0 0 300px; /* Fixed width for left section */
-  height: 100vh; /* Full height */
+  flex: 0 0 400px;
+  height: 100vh;
   font-size: 27px;
-  padding: 5%;
-  /* padding-left: 2%; */
-  /*background-color: #f0f0f0;  Example background color */
 }
 
 .right-section {
-  flex: 1; /* Flexible width for right section */
-  overflow-y: auto; /* Enable vertical scrolling */
-  height: 100vh; /* Full height */
-  background-color: black; /* Example background color */
-  font-size: 27px;
+  flex: 1;
+  overflow-y: auto;
+  height: 100vh;
   padding: 5%;
 }
 
-/* CSS for mobile layout */
-@media screen and (max-width: 767px) {
-  body {
-    padding: 5%;
-  }
-  .project-container {
-    flex-direction: column; /* Stack sections vertically */
-  }
-
-  .left-section,
-  .right-section {
-    flex: none; /* Reset flex to default behavior */
-    width: 100%; /* Full width */
-    height: auto; /* Auto height */
-  }
-}
-
 .topics {
+  font-family: "spirits-neutral", serif;
+  font-weight: 200;
+  font-style: normal;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -151,12 +105,10 @@ img {
   margin: auto;
 }
 
-/* Hide the images by default */
 .mySlides {
   display: none;
 }
 
-/* Next & previous buttons */
 .prev,
 .next {
   cursor: pointer;
@@ -194,7 +146,7 @@ img {
   top: 0;
 }
 
-/* The dots/bullets/indicators */
+/* The dot indicators */
 .dot {
   cursor: pointer;
   height: 10px;
@@ -226,29 +178,6 @@ img {
   }
 }
 
-@media screen and (max-width: 600px) {
-  /* a {
-      font-size: 22px;
-    } */
-
-  h1 {
-    font-size: 22px;
-  }
-
-  h2 {
-    font-size: 14px;
-  }
-
-  p {
-    font-size: 15px;
-  }
-
-  .dot {
-    width: 5px;
-    height: 5px;
-  }
-}
-
 .image-flex-container {
   display: flex;
   justify-content: space-between;
@@ -270,7 +199,6 @@ img {
 }
 
 div.scroll-container {
-  /* background-color: #333; */
   overflow-y: auto;
   height: 50%;
   width: 100vh;
@@ -303,7 +231,84 @@ div.scroll-container img {
   padding: 0;
 }
 
-/* Responsive Design */
+@media screen and (max-width: 767px) {
+  body {
+    padding: 5%;
+  }
+  .project-container {
+    flex-direction: column;
+  }
+
+  .left-section {
+    margin-top: 5vh;
+    padding: 0%;
+    flex: none; /* Reset flex to default behavior */
+    width: 100%;
+    height: auto;
+  }
+  .right-section {
+    margin-top: 5vh;
+    padding: 0%;
+    flex: none; /* Reset flex to default behavior */
+    width: 100%;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 18px;
+    margin-left: 0;
+  }
+
+  p {
+    font-size: 15px;
+    margin: 0;
+    padding-top: 1vh;
+  }
+
+  .dot {
+    width: 5px;
+    height: 5px;
+  }
+
+  img {
+    margin-top: 5vh;
+  }
+
+  .topics {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5%;
+    border: solid white;
+    border-width: 0.001cm;
+    /* flex-basis: content; */
+    border-color: #046b8a;
+    margin-bottom: 5px;
+    padding: 0;
+    word-wrap: nowrap;
+    font-size: 28px;
+  }
+
+  .topics h2 {
+    font-size: 16px;
+    padding: 5px;
+    text-align: left;
+    justify-content: space-between;
+  }
+
+  .image-flex-container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0px;
+    z-index: -100;
+  }
+}
+
 @media (max-width: 768px) {
   .scrollable-section,
   .fixed-section {
@@ -311,7 +316,7 @@ div.scroll-container img {
     height: 50vh; /* Adjust height to 50% of viewport height */
   }
   .container {
-    height: auto; /* Adjust container height to fit content */
+    height: auto;
   }
 }
 

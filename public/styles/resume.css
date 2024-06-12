@@ -1,36 +1,35 @@
+/* * {
+  border: 0.5px solid blue;
+  box-sizing: border-box;
+} */
+
 body {
-  max-width: 1200px;
+  max-width: 90vw;
   margin: 0 auto;
   background-color: black;
-  height: 100%;
   color: white;
   display: block;
   box-sizing: border-box;
   font-family: "main font", serif;
+  cursor: url("Images/pointer.png"), auto;
 }
 
 a {
   color: white;
-  font-size: 25px;
+  font-size: 24px;
   text-decoration: none;
   margin: 5% 5%;
 }
 
-#menuToggle {
-  display: block;
-  position: absolute;
-  top: 40px;
-  z-index: 1;
-}
-
-.linearGrid {
+.resume {
+  margin-top: 5%;
   margin: 50px 20px;
   display: flex;
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
 }
 
-.linearGrid img {
+.resume img {
   width: 100%; /* Adjust width as needed */
   height: auto; /* Adjust height as needed */
   opacity: 1;
@@ -41,7 +40,7 @@ img {
 }
 
 /* Style buttons */
-.btn {
+.download-resume {
   /* background-color: #cec9f0; */
   background-color: black;
   border: 1%;
@@ -56,7 +55,7 @@ img {
 }
 
 /* Darker background on mouse-over */
-.btn:hover {
+.download-resume:hover {
   /* background-color: RoyalBlue; */
   background: linear-gradient(
     60deg,
