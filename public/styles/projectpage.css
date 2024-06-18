@@ -50,6 +50,50 @@ a {
   justify-content: right;
 }
 
+.project-link {
+  font-family: "Instrument Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 250;
+  font-style: normal;
+  border-radius: 10px;
+  border: 1px solid white;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  padding: 5px 10px;
+  margin: 1;
+  transition: all 0.5s;
+  cursor: pointer;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+}
+
+.project-link {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.project-link:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 5%;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.project-link:hover {
+  color: rgb(196, 172, 230);
+  padding-right: 25px;
+  padding-left: 8px;
+}
+
+.project-link:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+
 img {
   width: 100%;
   justify-content: center;

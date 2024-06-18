@@ -10,7 +10,8 @@
 
     <link rel="icon" type="image/x-icon" href="/images/homepage/pointer.png" />
 
-    <link rel="stylesheet" type="text/css" href="../styles/resume.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="../styles/index.css" /> -->
+    <link rel="stylesheet" type="text/css" href="../styles/about.css" />
     <link rel="stylesheet" type="text/css" href="../styles/navigation.css" />
 
     <title>Resume</title>
@@ -28,24 +29,80 @@
 
           <ul id="menu">
             <a href="./projects.html"><li>PROJECTS</li></a>
-            <a href="./resume.html"><li>RESUME</li></a>
+            <a href="./resume.html"><li>CONTACT</li></a>
             <a href="./about.html"><li>ABOUT</li></a>
           </ul>
         </div>
       </nav>
     </div>
 
-    <div class="resume">
-      <img src="/Images/about/Resume/Paridhi's Resume.png" width="50%" />
+    <div class="container homepage-img">
+      <img src="/Images/homepage/bg.png" style="width: 100%; opacity: 30%" />
     </div>
-    <button class="download-resume" onclick="downloadImage()">
+
+    <!--Contact information -->
+    <div class="links-grid">
+      <a href="mailto: paridhigarg27@gmail.com" class="footer-link" id="email">
+        <img
+          src="/Images/about/contact/email.png"
+          alt="Email Logo"
+          class="logo"
+        />
+        Email
+      </a>
+      <a
+        href="https://www.instagram.com/paridhiii_27/"
+        target="_blank"
+        class="footer-link"
+        id="instagram"
+      >
+        <img
+          src="/Images/about/contact/instagram.png"
+          alt="Instagram Logo"
+          class="logo"
+        />
+        Instagram
+      </a>
+      <a
+        href="https://www.linkedin.com/in/paridhi-garg-a15824234/"
+        target="_blank"
+        class="footer-link"
+        id="linkedin"
+      >
+        <img
+          src="/Images/about/contact/linkedin.png"
+          alt="LinkedIn Logo"
+          class="logo"
+        />
+        LinkedIn
+      </a>
+      <a
+        href="https://github.com/Paridhii27"
+        target="_blank"
+        class="footer-link"
+        id="github"
+      >
+        <img
+          src="/Images/about/contact/github.png"
+          alt="GitHub Logo"
+          class="logo"
+        />
+        GitHub
+      </a>
+    </div>
+
+    <div class="resume">
+      <!-- <img src="/Images/about/Resume/Paridhi's Resume.png" /> -->
+    </div>
+    <!-- <button class="download-resume" onclick="downloadImage()">
       <i class="fa fa-download"></i> Download
     </button>
     <a
       id="downloadLink"
       href="/Images/about/Resume/Paridhi's Resume.png"
       download
-    ></a>
+    ></a> -->
+
     <script src="../scripts/script.js"></script>
   </body>
 </html>

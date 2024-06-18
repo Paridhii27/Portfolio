@@ -21,18 +21,39 @@ a {
   margin: 5% 5%;
 }
 
-.resume {
-  margin-top: 5%;
-  margin: 50px 20px;
+.homepage-container {
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  flex-direction: column;
+}
+
+.homepage-img {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.homepage-img img {
+  all: unset;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.resume {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: scroll;
 }
 
 .resume img {
-  width: 100%; /* Adjust width as needed */
-  height: auto; /* Adjust height as needed */
-  opacity: 1;
+  width: 60vw;
+  height: auto;
+  justify-content: center;
+  align-items: center;
 }
 
 img {
@@ -42,25 +63,27 @@ img {
 /* Style buttons */
 .download-resume {
   /* background-color: #cec9f0; */
-  background-color: black;
-  border: 1%;
+  background-color: transparent;
+  border: 1px solid white;
   border-radius: 10px;
   color: white;
-  padding: 12px 20px;
+  padding: 10px 10px;
   cursor: pointer;
-  font-size: 24px;
+  font-size: 20px;
   font-family: "main font";
-  margin-left: 3%;
+  margin-left: 70%;
   margin-bottom: 2%;
+  display: flex;
+  justify-content: center;
 }
 
 /* Darker background on mouse-over */
 .download-resume:hover {
   /* background-color: RoyalBlue; */
   background: linear-gradient(
-    60deg,
-    #c8aff0,
-    #2b50e5
+    120deg,
+    #9c82c5,
+    #e1f789
   ); /* Gradient effect on hover */
   color: #fff;
   transition: background-color 0.5s ease;

@@ -113,6 +113,31 @@ img {
   font-size: 20px;
 }
 
+.download-resume {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+  padding: 10px 10px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: "main font";
+  display: flex;
+  justify-content: center;
+}
+
+/* Darker background on mouse-over */
+.download-resume:hover {
+  /* background-color: RoyalBlue; */
+  background: linear-gradient(
+    20deg,
+    #846986,
+    #6b73a9
+  ); /* Gradient effect on hover */
+  color: #fff;
+  transition: background-color 0.5s ease;
+}
+
 .links-grid {
   display: flex;
   flex-wrap: nowrap;
